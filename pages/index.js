@@ -1,5 +1,9 @@
-import Navbar from "../components/Navbar";
 import Head from "next/head";
+import About from "../components/About";
+import Start from "../components/Start";
+import Navbar from "../components/Navbar";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -10,7 +14,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <Navbar />
+      <Start />
+      <About />
+      <Skills />
+      <Projects />
     </>
   );
 }

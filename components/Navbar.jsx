@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 import { BsTelephoneFill } from 'react-icons/bs';
-import NavLogo from '../public/assets/img/LogoRM-SinBackground.png'
+import NavLogo from '../public/assets/img/LogoRM-Black.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 lg:px-16">
         <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
         <div>
           <ul className="hidden md:flex">
@@ -23,16 +23,16 @@ const Navbar = () => {
               <Link href="/">Inicio</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Acerca de</Link>
+              <Link href="/#about">Acerca de</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Habilidades</Link>
+              <Link href="/#skills">Habilidades</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Projectos</Link>
+              <Link href="/#projects">Projectos</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Contacto</Link>
+              <Link href="/#contac">Contacto</Link>
             </li>
           </ul>
           <div className="md:hidden" onClick={handleNav}>
@@ -58,7 +58,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="border-b border-gray-300 my-5">
-            <p className="w-[85%] md:w-[98%] py-3">Construyamos algo legendario juntos</p>
+            <p className="w-[85%] md:w-[98%] py-3">Construyamos algo inolvidable juntos</p>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
@@ -66,35 +66,35 @@ const Navbar = () => {
                 <Link href="/">Inicio</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/">Acerca de</Link>
+                <Link href="/#about">Acerca de</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/">Habilidades</Link>
+                <Link href="/#skills">Habilidades</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/">Projectos</Link>
+                <Link href="/#projects">Projectos</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/">Contacto</Link>
+                <Link href="/#contac">Contacto</Link>
               </li>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest font-bold">Cuentame que necesitas</p>
+              <p className="uppercase tracking-widest font-bold text-[#5651e5]">Cuentame que necesitas</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsTelephoneFill />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />  
-                </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaLinkedinIn />
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
+                  <FaGithub />  
                 </div>
                 <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
                   <FaInstagram />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <AiOutlineMail />
+                </div>
+                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <BsTelephoneFill />
                 </div>
               </div>
             </div>
