@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
-import { FaGithub, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
-import { BsTelephoneFill } from 'react-icons/bs';
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import NavLogo from '../public/assets/img/LogoRM-Black.png'
+import SocialNetworks from "../common/SocialNetworks";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -18,21 +17,21 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-16">
         <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
         <div>
-          <ul className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
+          <ul className="hidden md:flex uppercase">
+            <li className="ml-10 text-sm hover:border-b border-black">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-black">
               <Link href="/#about">Acerca de</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-black">
               <Link href="/#skills">Habilidades</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
+            <li className="ml-10 text-sm hover:border-b border-black">
               <Link href="/#projects">Projectos</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#contac">Contacto</Link>
+            <li className="ml-10 text-sm hover:border-b border-black">
+              <Link href="/#contact">Contacto</Link>
             </li>
           </ul>
           <div className="md:hidden" onClick={handleNav}>
@@ -75,27 +74,13 @@ const Navbar = () => {
                 <Link href="/#projects">Projectos</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#contac">Contacto</Link>
+                <Link href="/#contact">Contacto</Link>
               </li>
             </ul>
             <div className="pt-40">
               <p className="uppercase tracking-widest font-bold text-[#5651e5]">Cuentame que necesitas</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />  
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaInstagram />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsTelephoneFill />
-                </div>
+                <SocialNetworks size={0} padding={3}/>
               </div>
             </div>
           </div>
