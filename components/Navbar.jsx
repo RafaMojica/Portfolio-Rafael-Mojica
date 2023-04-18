@@ -1,21 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
 import NavLogo from '../public/assets/img/LogoRM-Black.png'
 import SocialNetworks from "../common/SocialNetworks";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false)
 
   const handleNav = () => {
     setNav(!nav);
   };
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener('scroll', handleShadow);
+  }, []);
+
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]" : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-16">
-        <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+        <Link href="/">
+          <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+        </Link>
         <div>
           <ul className="hidden md:flex uppercase">
             <li className="ml-10 text-sm hover:border-b border-black">
@@ -51,7 +65,9 @@ const Navbar = () => {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+            <Link href="/">
+              <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+            </Link>
             <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer' onClick={handleNav}>
               <AiOutlineClose size={25} />
             </div>
@@ -62,19 +78,19 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <li className="py-4 text-sm">
-                <Link href="/">Inicio</Link>
+                <Link onClick={() => setNav(false)} href="/">Inicio</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#about">Acerca de</Link>
+                <Link onClick={() => setNav(false)} href="/#about">Acerca de</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#skills">Habilidades</Link>
+                <Link onClick={() => setNav(false)} href="/#skills">Habilidades</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#projects">Projectos</Link>
+                <Link onClick={() => setNav(false)} href="/#projects">Projectos</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link href="/#contact">Contacto</Link>
+                <Link onClick={() => setNav(false)} href="/#contact">Contacto</Link>
               </li>
             </ul>
             <div className="pt-40">
