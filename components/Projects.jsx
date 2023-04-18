@@ -10,7 +10,7 @@ const Projects = () => {
         <h2 className="py-4">¿Qué he desarrollado?</h2>
         <div className="grid md:grid-cols-2 gap-8">
           {dataProject.map( project =>
-            <ProjectItem key={project.name} src={project.image} name={project.name} desciption={project.desciption} projectUrl={project.projectUrl} />
+            <ProjectItem key={project.name} project={project} />
           )}
         </div>
       </div>
