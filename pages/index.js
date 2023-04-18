@@ -4,12 +4,13 @@ import Start from "../components/Start";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>Porfolio | Rafael Mojica</title>
+        <title>Portafolio | Rafael Mojica</title>
         <meta name="description" content="Porfolio Rafael Mojica" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -19,6 +20,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Contact />
     </>
   );
 }
