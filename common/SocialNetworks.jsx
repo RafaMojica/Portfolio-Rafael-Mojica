@@ -27,11 +27,11 @@ const SocialNetworks = ({size, padding}) => {
           <AiOutlineMail size={size} />
         </div>
       </Link>
-      <Link href="/resume">
+      <a href="https://wa.link/r6856s" target="_blank" rel="noreferrer">
         <div className={`rounded-full shadow-lg shadow-gray-400 p-${padding} cursor-pointer hover:scale-110 ease-in duration-300`}>
           <BsTelephoneFill size={size} />
         </div>
-      </Link>
+      </a>
     </>
   );
 };
