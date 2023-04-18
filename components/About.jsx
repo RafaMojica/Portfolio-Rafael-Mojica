@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import photoPorfile from "../public/assets/img/Photo-ConBackground.jpg";
-import Link from "next/link";
+import {BsFillFileEarmarkSpreadsheetFill} from "react-icons/bs"
 
 const About = () => {
   return (
@@ -28,9 +28,14 @@ const About = () => {
             aprendizaje trabajando en equipo, conociendo nuevas personar y
             formando amistades.
           </p>
-          <Link href="/#projects">
-            <p className="py-2 text-gray-600 underline cursor-pointer">Mira algunos de mis últimos proyectos.</p>
-          </Link>
+          <a href="https://drive.google.com/file/d/10NP9QdL1YZylSzzRFpGT7lOkwdaC0Ont/view?usp=share_link" target="_blank" rel="noreferrer" >
+          <div className="flex items-center justify-center py-2">
+            <div className={`flex rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300`}>
+              <BsFillFileEarmarkSpreadsheetFill size={20} />
+              <p className="font-bold px-2">CV</p>
+            </div>
+          </div>
+          </a>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image className="rounded-xl" src={photoPorfile} alt="Foto de Perfil" />
