@@ -32,19 +32,19 @@ const Navbar = () => {
         </Link>
         <div>
           <ul className="hidden md:flex uppercase">
-            <li className="ml-10 text-sm hover:border-b border-secondary">
+            <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-secondary">
-              <Link href="/#about">Acerca de</Link>
+            <li className="ml-10 text-sm hover:text-secondary">
+              <Link href="/#about">Sobre Mi</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-secondary">
+            <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/#skills">Habilidades</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-secondary">
+            <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/#projects">Projectos</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-secondary">
+            <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/#contact">Contacto</Link>
             </li>
           </ul>
@@ -81,7 +81,7 @@ const Navbar = () => {
                 <Link onClick={() => setNav(false)} href="/">Inicio</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#about">Acerca de</Link>
+                <Link onClick={() => setNav(false)} href="/#about">Sobre Mi</Link>
               </li>
               <li className="py-4 text-sm">
                 <Link onClick={() => setNav(false)} href="/#skills">Habilidades</Link>
