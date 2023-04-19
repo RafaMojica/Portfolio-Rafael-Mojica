@@ -25,26 +25,26 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-[#ecf0f3]" : "fixed w-full h-20 z-[100]"}>
+    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-background" : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-16">
         <Link href="/">
-          <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+          <Image src={NavLogo} alt="Logo RM" width="60" height="60"/>
         </Link>
         <div>
           <ul className="hidden md:flex uppercase">
-            <li className="ml-10 text-sm hover:border-b border-black">
+            <li className="ml-10 text-sm hover:border-b border-secondary">
               <Link href="/">Inicio</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-black">
+            <li className="ml-10 text-sm hover:border-b border-secondary">
               <Link href="/#about">Acerca de</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-black">
+            <li className="ml-10 text-sm hover:border-b border-secondary">
               <Link href="/#skills">Habilidades</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-black">
+            <li className="ml-10 text-sm hover:border-b border-secondary">
               <Link href="/#projects">Projectos</Link>
             </li>
-            <li className="ml-10 text-sm hover:border-b border-black">
+            <li className="ml-10 text-sm hover:border-b border-secondary">
               <Link href="/#contact">Contacto</Link>
             </li>
           </ul>
@@ -60,7 +60,7 @@ const Navbar = () => {
       <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
         <div className={
           nav 
-            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500" 
+            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-background p-10 ease-in duration-500" 
             : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
           }
         >
@@ -68,11 +68,11 @@ const Navbar = () => {
             <Link href="/">
               <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
             </Link>
-            <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer' onClick={handleNav}>
+            <div className='rounded-full shadow-lg shadow-shodowGrey400 p-3 cursor-pointer' onClick={handleNav}>
               <AiOutlineClose size={25} />
             </div>
           </div>
-          <div className="border-b border-gray-300 my-5">
+          <div className="border-b border-gray300 my-5">
             <p className="w-[85%] md:w-[98%] py-3">Construyamos algo inolvidable juntos</p>
           </div>
           <div className="py-4 flex flex-col">
@@ -94,7 +94,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest font-bold text-[#5651e5]">Cuentame que necesitas</p>
+              <p className="uppercase tracking-widest font-bold text-secondary">Cuentame que necesitas</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <SocialNetworks size={0} padding={3}/>
               </div>
