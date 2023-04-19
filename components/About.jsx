@@ -6,7 +6,7 @@ import {BsFillFileEarmarkSpreadsheetFill} from "react-icons/bs"
 const About = () => {
   return (
     <div id="about" className="w-full px-2 flex items-center py-24">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-12">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-16">
         <div className="flex flex-col justify-center col-span-2">
           <p className="uppercase text-xl tracking-widest text-secondary font-bold">Sobre Mi</p>
           <h2 className="py-4">¿Quien Soy?</h2>
