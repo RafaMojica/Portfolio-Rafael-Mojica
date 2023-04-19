@@ -22,11 +22,11 @@ const SocialNetworks = ({size, padding}) => {
           <FaInstagram size={size} />
         </div>
       </a>
-      <Link href="/#contact">
+      <a href="mailto:rafael.mojica27@gmail.com">
         <div className={`rounded-full shadow-lg shadow-shodowGrey400 p-${padding} cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}>
           <AiOutlineMail size={size} />
         </div>
-      </Link>
+      </a>
       <a href="https://wa.link/r6856s" target="_blank" rel="noreferrer">
         <div className={`rounded-full shadow-lg shadow-shodowGrey400 p-${padding} cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}>
           <BsTelephoneFill size={size} />
