@@ -6,7 +6,7 @@ import {BsFillFileEarmarkSpreadsheetFill} from "react-icons/bs"
 const About = () => {
   return (
     <div id="about" className="w-full px-2 flex items-center py-24">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-12">
         <div className="flex flex-col justify-center col-span-2">
           <p className="uppercase text-xl tracking-widest text-secondary font-bold">Sobre Mi</p>
           <h2 className="py-4">¿Quien Soy?</h2>
@@ -37,8 +37,12 @@ const About = () => {
           </div>
           </a>
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-shodowGrey400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image className="rounded-xl" src={photoPorfile} alt="Foto de Perfil" />
+        <div className="flex h-full items-center w-[80%] mx-auto md:w-full">
+          <div className="mt-12 md:m-0 rounded-3xl bg-gradient-to-r from-terciario to-gray300">
+            <div className="rounded-3xl rotate-12 duration-300 hover:rotate-0 overflow-hidden">
+              <Image className="rounded-3xl" src={photoPorfile} alt="Foto de Perfil" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
