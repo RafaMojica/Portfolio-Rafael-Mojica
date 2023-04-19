@@ -5,7 +5,7 @@ import SocialNetworks from "../common/SocialNetworks";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full px-2 py-24">
+    <div id="contact" className="w-full px-2 pt-24">
       <div className="max-w-[1240px] m-auto">
         <p className="uppercase text-xl tracking-widest text-secondary font-bold">Contacto</p>
         <h2 className="py-4">¿Qué necesitas?</h2>
@@ -15,7 +15,7 @@ const Contact = () => {
           </div>
 
           <div className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
-            <form action="" method="POST" encType="multipart/form-data" >
+            <form action="https://formspree.io/f/xnqyljlz" method="POST" >
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Nombre</label>
@@ -23,14 +23,16 @@ const Contact = () => {
                     className="border-2 rounded-lg p-3 border-gray300"
                     type="text"
                     name="name"
+                    required
                   />
                 </div>
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Telefono</label>
                   <input
                     className="border-2 rounded-lg p-3 border-gray300"
-                    type="text"
+                    type="number"
                     name="phone"
+                    required
                   />
                 </div>
               </div>
@@ -40,6 +42,7 @@ const Contact = () => {
                   className="border-2 rounded-lg p-3 border-gray300"
                   type="email"
                   name="email"
+                  required
                 />
               </div>
               <div className="flex flex-col py-2">
@@ -48,6 +51,7 @@ const Contact = () => {
                   className="border-2 rounded-lg p-3 flex border-gray300"
                   type="text"
                   name="subject"
+                  required
                 />
               </div>
               <div className="flex flex-col py-2">
@@ -56,6 +60,7 @@ const Contact = () => {
                   className="border-2 rounded-lg p-3 border-gray300"
                   rows="10"
                   name="message"
+                  required
                 ></textarea>
               </div>
               <button className="w-full p-4 mt-4">Enviar Mensaje</button>
@@ -64,8 +69,8 @@ const Contact = () => {
         </div>
         <div className="flex justify-center py-12">
           <Link href="/">
-            <div className="rounded-full shadow-lg shadow-shodowGrey400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className="text-secondary" size={30} />
+            <div className="text-secondary rounded-full shadow-lg shadow-shodowGrey400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain">
+              <HiOutlineChevronDoubleUp size={30} />
             </div>
           </Link>
         </div>
