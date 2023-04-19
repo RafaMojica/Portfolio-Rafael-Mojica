@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       colors: {
         background: "#ecf0f3",
-        main: "",
+        main: "#1f2937",
         secondary: "#5651e5",
         terciario: "#709dff",        //Degraded
         gray300: "rgb(209 213 219)", //Form, line navbar
@@ -19,8 +19,6 @@ module.exports = {
         shodowGrey400: "#9ca3af",
         buttonTextMain: "white",
         buttonBgProject: "white",
-        buttonTextProject: "rgb(55, 65, 81)",
-        textProject: "white",
       }
     },
   },
