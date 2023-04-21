@@ -10,11 +10,11 @@ const Contact = () => {
         <p className="uppercase text-xl tracking-widest text-secondary font-bold">Contacto</p>
         <h2 className="py-4">¿Qué necesitas?</h2>
         <div className="md:flex gap-8 md:max-w-[80%] m-auto">
-          <div data-aos="fade-right" data-aos-offset="-320" className="flex md:flex-col items-center justify-between py-10">
+          <div data-aos="fade-right" data-aos-offset="-250" className="flex md:flex-col items-center justify-between py-10">
             <SocialNetworks size={20} padding={6} animation={"none"} />
           </div>
 
-          <div data-aos="fade-left" data-aos-offset="-320" className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
+          <div data-aos="fade-left" data-aos-offset="-250" className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
             <form action="https://formspree.io/f/xnqyljlz" method="POST" >
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
