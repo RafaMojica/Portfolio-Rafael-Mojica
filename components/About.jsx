@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div id="about" className="w-full px-2 flex items-center py-24">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-16">
-        <div className="flex flex-col justify-center col-span-2">
+        <div data-aos="fade-right" className="flex flex-col justify-center col-span-2">
           <p className="uppercase text-xl tracking-widest text-secondary font-bold">Sobre Mi</p>
           <h2 className="py-4">¿Quien Soy?</h2>
           <p className="py-2 text-gray600">
@@ -37,7 +37,7 @@ const About = () => {
           </div>
           </a>
         </div>
-        <div className="flex h-full items-center w-[80%] mx-auto md:w-full">
+        <div data-aos="fade-left" className="flex h-full items-center w-[80%] mx-auto md:w-full">
           <div className="mt-12 md:m-0 rounded-3xl bg-gradient-to-r from-terciario to-gray300">
             <div className="rounded-3xl rotate-12 duration-300 hover:rotate-0 overflow-hidden">
               <Image className="rounded-3xl" src={photoPorfile} alt="Foto de Perfil" />

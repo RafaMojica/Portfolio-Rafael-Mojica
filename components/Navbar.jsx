@@ -96,7 +96,7 @@ const Navbar = () => {
             <div className="pt-40">
               <p className="uppercase tracking-widest font-bold text-secondary">Cuentame que necesitas</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <SocialNetworks size={0} padding={3}/>
+                <SocialNetworks size={0} padding={3} animation={"zoom-in"}/>
               </div>
             </div>
           </div>

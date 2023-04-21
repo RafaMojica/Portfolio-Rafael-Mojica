@@ -43,7 +43,7 @@ const Start = () => {
             experiencia y conocimientos en el mundo IT.
           </p>
           <div className="flex items-center justify-between max-w-[400px] m-auto py-4">
-            <SocialNetworks size={20} padding={6} />
+            <SocialNetworks size={20} padding={6} animation={"zoom-in"} />
           </div>
         </div>
         <div className={arrow ? "absolute left-[45%] md:left-[48%] bottom-5" : "hidden"}>
