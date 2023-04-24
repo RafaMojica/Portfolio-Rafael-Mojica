@@ -1,9 +1,14 @@
+import HomePorfolio from "../public/assets/projects/HomePorfolio.png";
+import HomeWatchMe from "../public/assets/projects/HomeWatchMe.png";
+import HomeRRHH from "../public/assets/projects/HomeRRHH.png";
+import HomeComoEnCasa from "../public/assets/projects/HomeComoEnCasa.png";
+
 const dataProjects = [
   {
     name: "Portafolio",
     type: "Aplicacíon Web",
     projectUrl: "/Porfolio",
-    image: "/../public/assets/projects/HomePorfolio.PNG",
+    image: HomePorfolio,
     sumamary: "Portafolio profesional Rafael Mojica",
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
     backUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
@@ -15,7 +20,7 @@ const dataProjects = [
     name: "Watch Me",
     type: "Aplicacíon Web",
     projectUrl: "/WatchMe",
-    image: "/../public/assets/projects/HomeWatchMe.PNG",
+    image: HomeWatchMe,
     sumamary: "Sitio Web enfocado de películas y series de televisión",
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
     backUrl: "https://github.com/RafaMojica/BACK-Web-WatchMe",
@@ -27,7 +32,7 @@ const dataProjects = [
     name: "RRHH",
     type: "Aplicacíon Movil",
     projectUrl: "/RRHH",
-    image: "/../public/assets/projects/HomeRRHH.PNG",
+    image: HomeRRHH,
     sumamary: "Aplicación Móvil para la dependencia de recursos Humanos",
     technologies: ["React Native", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Material UI" ],
     backUrl: "https://github.com/RafaMojica/BACK-App-RRHH",
@@ -39,7 +44,7 @@ const dataProjects = [
     name: "Como en Casa",
     type: "Aplicacíon Web",
     projectUrl: "/ComoEnCasa",
-    image: "/../public/assets/projects/HomeComoEnCasa.PNG",
+    image: HomeComoEnCasa,
     sumamary: "Sitio web E-commerce con temática de restaurante",
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
     backUrl: "https://github.com/RafaMojica/Como-en-casa",
