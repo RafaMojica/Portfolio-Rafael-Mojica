@@ -10,7 +10,7 @@ const Contact = () => {
         <p className="uppercase text-xl tracking-widest text-secondary font-bold">Contacto</p>
         <h2 className="py-4">¿Qué necesitas?</h2>
         <div className="md:flex gap-8 md:max-w-[80%] m-auto">
-          <div data-aos="fade-right" data-aos-offset="-250" className="flex md:flex-col items-center justify-between py-10">
+          <div data-aos="fade-right" data-aos-offset="-250" className="flex md:flex-col items-center justify-between pb-2 lg:py-10">
             <SocialNetworks size={20} padding={6} animation={"none"} />
           </div>
 
