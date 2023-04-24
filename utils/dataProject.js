@@ -6,10 +6,10 @@ const dataProjects = [
     image: "/../public/assets/projects/HomePorfolio.png",
     sumamary: "Portafolio profesional Rafael Mojica",
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
-    backUrl: "/",
+    backUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
     frontUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
-    demoUrl: "/",
-    webUrl: "/",
+    demoUrl: "/Building",
+    webUrl: "/Building",
   },
   {
     name: "Watch Me",
@@ -20,8 +20,8 @@ const dataProjects = [
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
     backUrl: "https://github.com/RafaMojica/BACK-Web-WatchMe",
     frontUrl: "https://github.com/RafaMojica/FRONT-Web-WatchMe",
-    demoUrl: "/",
-    webUrl: "/",
+    demoUrl: "/Building",
+    webUrl: "/Building",
   },
   {
     name: "RRHH",
@@ -32,8 +32,8 @@ const dataProjects = [
     technologies: ["React Native", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Material UI" ],
     backUrl: "https://github.com/RafaMojica/BACK-App-RRHH",
     frontUrl: "https://github.com/RafaMojica/FRONT-App-RRHH",
-    demoUrl: "/",
-    webUrl: "/",
+    demoUrl: "/Building",
+    webUrl: "/Building",
   },
   {
     name: "Como en Casa",
@@ -44,8 +44,8 @@ const dataProjects = [
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
     backUrl: "https://github.com/RafaMojica/Como-en-casa/tree/main/api",
     frontUrl: "https://github.com/RafaMojica/Como-en-casa",
-    demoUrl: "/",
-    webUrl: "/",
+    demoUrl: "/Building",
+    webUrl: "/Building",
   },
 ];
 
