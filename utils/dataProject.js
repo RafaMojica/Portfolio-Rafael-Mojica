@@ -42,7 +42,7 @@ const dataProjects = [
     image: "/../public/assets/projects/HomeComoEnCasa.png",
     sumamary: "Sitio web E-commerce con temática de restaurante",
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
-    backUrl: "https://github.com/RafaMojica/Como-en-casa/tree/main/api",
+    backUrl: "https://github.com/RafaMojica/Como-en-casa",
     frontUrl: "https://github.com/RafaMojica/Como-en-casa",
     demoUrl: "/Building",
     webUrl: "/Building",
