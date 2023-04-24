@@ -3,7 +3,7 @@ const dataProjects = [
     name: "Portafolio",
     type: "Aplicacíon Web",
     projectUrl: "/Porfolio",
-    image: "/../public/assets/projects/HomePorfolio.PNG",
+    image: "/_next/public/assets/projects/HomePorfolio.PNG",
     sumamary: "Portafolio profesional Rafael Mojica",
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
     backUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
