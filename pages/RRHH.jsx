@@ -27,13 +27,13 @@ const RRHH = () => {
             oficinas, también puede ver si el usuario se encuentra activo o
             ausente en el trabajo, ver su historial de asistencia y filtrarlos
             por mes/año, ver novedades solicitadas por los usuarios y cambiar su
-            estado (pendiente / aprobado / rechazado )
+            estado (pendiente / aprobado / rechazado)
           </p>
           <h4 className="flex items-center"><AiFillCaretRight className="mx-2"/>Usuario</h4>
           <p className="py-4">
             El usuario puede ver su perfil, datos laborales y editar
             determinados campos, ver las oficinas que cuenta la empresa, fichar
-            asistencia y ver historial donde puede filtrlas por mes/año, ver su
+            asistencia y ver historial donde puede filtrar por mes/año, ver su
             equipo de trabajo, información de ellos y quien se encuentra activo
             o ausente, solicitar novedades y ver el estado de las novedades
             solicitadas (pendiente / aprobado / rechazado)

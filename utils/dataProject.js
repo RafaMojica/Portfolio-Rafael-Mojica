@@ -20,7 +20,7 @@ const dataProjects = [
     type: "Aplicacíon Web",
     projectUrl: "/WatchMe",
     image: HomeWatchMe,
-    sumamary: "Sitio Web enfocado de películas y series de televisión",
+    sumamary: "Sitio Web enfocado en películas y series de televisión",
     technologies: ["React.js", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Sass" ],
     backUrl: "https://github.com/RafaMojica/BACK-Web-WatchMe",
     frontUrl: "https://github.com/RafaMojica/FRONT-Web-WatchMe",

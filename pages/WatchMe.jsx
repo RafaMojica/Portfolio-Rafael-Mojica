@@ -23,7 +23,7 @@ const WhatchMe = () => {
           <p className="py-4">
             El usuario puede listar, buscar e interactuar con un amplio catálogo
             de películas y series, puede registrarse, iniciar sesión, añadir o
-            eliminar películas o series de sus favoritos. Por otro lado puede
+            eliminar películas o series de sus favoritos. Por otro lado, puede
             ver otros usuarios registrados y sus listas de favoritos.
           </p>
           <div className="flex justify-around flex-wrap">

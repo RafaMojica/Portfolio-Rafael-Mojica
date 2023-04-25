@@ -19,15 +19,15 @@ const ComoEnCasa = () => {
           <h4 className="flex items-center"><AiFillCaretRight className="mx-2"/>Administrador</h4>
           <p className="py-4">
             El administrador puede agregar, editar, eliminar y definir el stock de un producto,
-            también ver los usuarios registrados, asignar roles de admin a ellos
-            o eliminarlos, por otro lado ver el historial de pedidos y cambiar
-            el estado del pedido de pediente a enviado.
+            también ver los usuarios registrados, asignar roles de administrador
+            o eliminarlos, por otro lado, ver el historial de pedidos y cambiar
+            el estado del pedido de pendiente ha enviado.
           </p>
           <h4 className="flex items-center"><AiFillCaretRight className="mx-2"/>Usuario</h4>
           <p className="py-4">
             El usuario puede interactuar con el catálogo de los productos, agregar o
-            eliminaro del carrito de compras, escoger la cantidad que desea,
-            realizar el pagar correspondiente, ver su historial de pedidos y el
+            eliminarlo del carrito de compras, escoger la cantidad que desea,
+            realizar el pagar correspondiente, ver su historial de pedidos y él
             estado en el que se encuentra el pedido (pendiente / enviado).
           </p>
           <div className="flex justify-around flex-wrap">
