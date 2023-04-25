@@ -93,10 +93,9 @@ const Navbar = () => {
                 <Link onClick={() => setNav(false)} href="/#contact">Contacto</Link>
               </li>
             </ul>
-            <div className="pt-10">
-              <p className="uppercase tracking-widest font-bold text-secondary">Cuentame que necesitas</p>
+            <div className="pt-2">
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <SocialNetworks size={0} padding={3} animation={"zoom-in"}/>
+                <SocialNetworks size={0} padding={3} animation={"none"} />
               </div>
             </div>
           </div>
