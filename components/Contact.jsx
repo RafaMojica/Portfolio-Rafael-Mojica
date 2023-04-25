@@ -27,7 +27,7 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col">
-                  <label className="uppercase text-sm py-2">Telefono</label>
+                  <label className="uppercase text-sm py-2">Teléfono</label>
                   <input
                     className="border-2 rounded-lg p-3 border-gray300"
                     type="number"

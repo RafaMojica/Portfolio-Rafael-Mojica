@@ -12,7 +12,7 @@ const ProjectItem = ({ project }) => {
         <p className="pb-4 pt-2 text-center">{sumamary}</p>
         <Link className="flex justify-center" href={projectUrl}>
           <p className="px-5 py-2 bg-buttonBgProject font-bold shadow-xl shadow-shodowGrey400 rounded-xl hover:scale-110 ease-in duration-300">
-            Ver mas
+          Ver más
           </p>
         </Link>
       </div>

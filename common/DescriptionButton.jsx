@@ -13,7 +13,7 @@ const DescriptionButton = ({frontUrl, backUrl, demoUrl, webUrl}) => {
         <button className="px-8 py-2 mt-8 hover:scale-110 ease-in duration-300">Demo</button>
       </a>
       <a href={webUrl} target="_blank" rel="noreferrer">
-        <button className="px-8 py-2 mt-8 hover:scale-110 ease-in duration-300">Pagina Web</button>
+        <button className="px-8 py-2 mt-8 hover:scale-110 ease-in duration-300">Página Web</button>
       </a>
     </div>
   );
