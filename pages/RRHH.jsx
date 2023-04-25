@@ -6,7 +6,7 @@ import HeaderProject from "../common/HeaderProject";
 import {AiFillCaretRight} from "react-icons/ai"
 
 const RRHH = () => {
-  const { name, image, technologies, type, frontUrl, backUrl, demoUrl, webUrl } = dataProyect[2];
+  const { name, image, technologies, type, frontUrl, backUrl, demoUrl } = dataProyect[2];
 
   return (
     <div className="w-full">
@@ -38,7 +38,12 @@ const RRHH = () => {
             o ausente, solicitar novedades y ver el estado de las novedades
             solicitadas (pendiente / aprobado / rechazado)
           </p>
-          <DescriptionButton frontUrl={frontUrl} backUrl={backUrl} demoUrl={demoUrl} webUrl={webUrl} />
+          <div className="flex justify-around flex-wrap">
+            <a href={backUrl} target="_blank" rel="noreferrer">
+              <button className="px-8 py-2 mt-8 hover:scale-110 ease-in duration-300">Back</button>
+            </a>
+            <DescriptionButton frontUrl={frontUrl} demoUrl={demoUrl} />
+          </div>
         </div>
         <div data-aos="zoom-in" className="col-span-4 md:col-span-1 shadow-xl shadow-shodowGrey400 rounded-xl p-6">
           <p className="text-center font-bold pb-2">Tecnologías</p>

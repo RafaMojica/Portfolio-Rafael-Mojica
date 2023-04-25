@@ -11,10 +11,9 @@ const dataProjects = [
     image: HomePorfolio,
     sumamary: "Portafolio profesional Rafael Mojica",
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
-    backUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
     frontUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
     demoUrl: "/Building",
-    webUrl: "/Building",
+    webUrl: "https://portafolio-rafael-mojica.vercel.app/",
   },
   {
     name: "Watch Me",

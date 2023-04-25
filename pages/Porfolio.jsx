@@ -6,7 +6,7 @@ import HeaderProject from "../common/HeaderProject";
 import {AiFillCaretRight} from "react-icons/ai"
 
 const Porfolio = () => {
-  const { name, image, technologies, type, frontUrl, backUrl, demoUrl, webUrl } = dataProyect[0];
+  const { name, image, technologies, type, frontUrl, demoUrl, webUrl } = dataProyect[0];
 
   return (
     <div className="w-full">
@@ -29,7 +29,12 @@ const Porfolio = () => {
             mantenerse, en contacto conmigo, puede enviarme un correo
             directo o visitar las diferentes redes sociales que poseo.
           </p>
-          <DescriptionButton frontUrl={frontUrl} backUrl={backUrl} demoUrl={demoUrl} webUrl={webUrl} />
+          <div className="flex justify-around flex-wrap">
+            <DescriptionButton frontUrl={frontUrl} demoUrl={demoUrl} />
+            <a href={webUrl} target="_blank" rel="noreferrer">
+              <button className="px-8 py-2 mt-8 hover:scale-110 ease-in duration-300">Página Web</button>
+            </a>
+          </div>
         </div>
         <div data-aos="zoom-in" className="col-span-4 md:col-span-1 shadow-xl shadow-shodowGrey400 rounded-xl p-6">
           <p className="text-center font-bold pb-2">Tecnologías</p>
