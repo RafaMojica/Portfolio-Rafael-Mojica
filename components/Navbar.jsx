@@ -72,7 +72,7 @@ const Navbar = () => {
               <AiOutlineClose size={25} />
             </div>
           </div>
-          <div className="border-b border-gray300 my-5">
+          <div className="border-b border-secondary my-5">
             <p className="w-[85%] md:w-[98%] py-3">Construyamos algo juntos</p>
           </div>
           <div className="py-4 flex flex-col">
