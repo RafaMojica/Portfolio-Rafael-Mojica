@@ -36,13 +36,13 @@ const Navbar = () => {
               <Link href="/">Inicio</Link>
             </li>
             <li className="ml-10 text-sm hover:text-secondary">
-              <Link href="/#about">Sobre Mi</Link>
+              <Link href="/#about">Sobre Mí</Link>
             </li>
             <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/#skills">Habilidades</Link>
             </li>
             <li className="ml-10 text-sm hover:text-secondary">
-              <Link href="/#projects">Projectos</Link>
+              <Link href="/#projects">Proyectos</Link>
             </li>
             <li className="ml-10 text-sm hover:text-secondary">
               <Link href="/#contact">Contacto</Link>
@@ -73,7 +73,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="border-b border-gray300 my-5">
-            <p className="w-[85%] md:w-[98%] py-3">Construyamos algo inolvidable juntos</p>
+            <p className="w-[85%] md:w-[98%] py-3">Construyamos algo juntos</p>
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
@@ -81,19 +81,19 @@ const Navbar = () => {
                 <Link onClick={() => setNav(false)} href="/">Inicio</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#about">Sobre Mi</Link>
+                <Link onClick={() => setNav(false)} href="/#about">Sobre Mí</Link>
               </li>
               <li className="py-4 text-sm">
                 <Link onClick={() => setNav(false)} href="/#skills">Habilidades</Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#projects">Projectos</Link>
+                <Link onClick={() => setNav(false)} href="/#projects">Proyectos</Link>
               </li>
               <li className="py-4 text-sm">
                 <Link onClick={() => setNav(false)} href="/#contact">Contacto</Link>
               </li>
             </ul>
-            <div className="pt-40">
+            <div className="pt-10">
               <p className="uppercase tracking-widest font-bold text-secondary">Cuentame que necesitas</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <SocialNetworks size={0} padding={3} animation={"zoom-in"}/>

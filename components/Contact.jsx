@@ -5,16 +5,16 @@ import SocialNetworks from "../common/SocialNetworks";
 
 const Contact = () => {
   return (
-    <div id="contact" className="w-full px-2 pt-24">
+    <div id="contact" className="w-full px-2 pt-16 md:pt-24">
       <div className="max-w-[1240px] m-auto">
         <p className="uppercase text-xl tracking-widest text-secondary font-bold">Contacto</p>
         <h2 className="py-4">¿Qué necesitas?</h2>
         <div className="md:flex gap-8 md:max-w-[80%] m-auto">
-          <div data-aos="zoom-in" className="flex md:flex-col items-center justify-between pb-2 lg:py-10">
+          <div data-aos="zoom-in" data-aos-offset="200" className="flex md:flex-col items-center justify-between py-5 lg:py-10">
             <SocialNetworks size={20} padding={6} animation={"none"} />
           </div>
 
-          <div data-aos="zoom-in" className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
+          <div data-aos="zoom-in" data-aos-offset="200" className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
             <form action="https://formspree.io/f/xnqyljlz" method="POST" >
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
