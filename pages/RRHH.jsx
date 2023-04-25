@@ -45,7 +45,7 @@ const RRHH = () => {
             <DescriptionButton frontUrl={frontUrl} demoUrl={demoUrl} />
           </div>
         </div>
-        <div data-aos="zoom-in" className="col-span-4 md:col-span-1 shadow-xl shadow-shodowGrey400 rounded-xl p-6">
+        <div data-aos="zoom-in" data-aos-offset="-200" className="col-span-4 md:col-span-1 shadow-xl shadow-shodowGrey400 rounded-xl p-6">
           <p className="text-center font-bold pb-2">Tecnologías</p>
           {technologies.map((technologie) => (
             <Technologies key={technologie} technologie={technologie} />
