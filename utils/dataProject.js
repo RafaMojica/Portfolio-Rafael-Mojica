@@ -32,7 +32,7 @@ const dataProjects = [
     type: "Aplicacíon Movil",
     projectUrl: "/RRHH",
     image: HomeRRHH,
-    sumamary: "Aplicación Móvil para la dependencia de recursos Humanos",
+    sumamary: "Aplicación Móvil para facilitar los procesos del departamento de recursos Humanos",
     technologies: ["React Native", "Redux", "Javascript", "Node.js", "Express", "Sequelize", "PostgreSQL", "Material UI" ],
     backUrl: "https://github.com/RafaMojica/BACK-App-RRHH",
     frontUrl: "https://github.com/RafaMojica/FRONT-App-RRHH",

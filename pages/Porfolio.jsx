@@ -15,9 +15,9 @@ const Porfolio = () => {
         <div data-aos="zoom-in" className="col-span-4 md:col-span-3">
           <h2 className="py-4">Descripción</h2>
           <p>
-            Mi portafolio personal web donde encontrarás una selección de mis
-            proyectos y trabajos realizados, que muestran mis habilidades y
-            experiencia en el diseño y desarrollo de sitios web.
+            Mi portafolio personal web donde encontrarás mis
+            proyectos y trabajos realizados, mostrando mis habilidades y
+            experiencia en el diseño y desarrollo de sitios web y aplicación móvil.
           </p>
           <h3 className="uppercase tracking-wider pt-7 pb-3">
             Funcionalidades
