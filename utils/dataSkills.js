@@ -51,6 +51,14 @@ const dataSkills = [
     name: "JavaScript",
     image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
+  {
+    name: "Git",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  },
+  {
+    name: "Github",
+    image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+  },
 ];
 
 module.exports = dataSkills
