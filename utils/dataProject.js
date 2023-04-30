@@ -13,7 +13,7 @@ const dataProjects = [
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
     frontUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
     demoUrl: "/Building",
-    webUrl: "https://portafolio-rafael-mojica.vercel.app/",
+    webUrl: "https://rafaelmojica.vercel.app/",
   },
   {
     name: "Watch Me",

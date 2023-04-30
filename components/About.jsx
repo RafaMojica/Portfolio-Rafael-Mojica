@@ -28,7 +28,7 @@ const About = () => {
             aprendizaje trabajando en equipo, conociendo nuevas personar y
             formando amistades.
           </p>
-          <a href="https://drive.google.com/file/d/10NP9QdL1YZylSzzRFpGT7lOkwdaC0Ont/view?usp=share_link" target="_blank" rel="noreferrer" >
+          <a href="https://drive.google.com/file/d/1P1VRNPb3dgXHkVWUlvW2f2LmG8UFFunP/view?usp=share_link" target="_blank" rel="noreferrer" >
           <div className="flex items-center justify-center py-2">
             <div className={`flex rounded-full shadow-lg shadow-shodowGrey400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}>
               <BsFillFileEarmarkSpreadsheetFill size={20} />
