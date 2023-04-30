@@ -10,7 +10,7 @@ const dataProjects = [
     projectUrl: "/Porfolio",
     image: HomePorfolio,
     sumamary: "Portafolio profesional Rafael Mojica",
-    technologies: ["Next.js", "React.js", "Tailwind", "Javascript" ],
+    technologies: ["Next.js", "React.js", "Tailwind", "Javascript", "Aos" ],
     frontUrl: "https://github.com/RafaMojica/FRONT-Porfolio",
     demoUrl: "/Building",
     webUrl: "https://rafaelmojica.vercel.app/",
