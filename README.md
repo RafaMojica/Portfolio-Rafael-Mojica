@@ -1,38 +1,133 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<a name="inicio"></a>
 
-## Getting Started
+<!-- PROJECT LOGO -->
 
-First, run the development server:
+<div align="center">
+  <a href="https://github.com/RafaMojica/FRONT-Porfolio">
+    <img src="./public/assets/projects/HomePorfolio.png" alt="Logo" width="400">
+  </a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+  <p align="center">
+    <h3 align="center">PORTAFOLIO</h3>
+    <a href="https://rafaelmojica.vercel.app/"><strong>Ver la página Web »</strong></a>
+    <br />
+    <a href="https://github.com/RafaMojica/FRONT-Porfolio"><strong>Ver el repositorio »</strong></a>
+    <br />
+  </p>
+</div>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- TABLE OF CONTENTS -->
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Tabla de contenido
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<ol>
+  <li>
+    <a href="#descripción-del-proyecto">Descripción del Proyecto</a>
+    <ul>
+      <li><a href="#tecnologías-utilizadas">Tecnologías utilizadas</a></li>
+    </ul>
+  </li>
+  <li>
+    <a href="#cómo-empezar">Cómo Empezar</a>
+    <ul>
+      <li><a href="#instalación">Instalación</a></li>
+    </ul>
+  </li>
+  <li><a href="#funcionalidades">Funcionalidades</a></li>
+  <li><a href="#como-contribuir">Como contribuir</a></li>
+  <li><a href="#contacto">Contacto</a></li>
+</ol>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+<!-- ABOUT THE PROJECT -->
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Descripción del proyecto
 
-## Learn More
+Mi portafolio personal web donde conocerás una poco más de mí, aquí encontrarás mis proyectos y trabajos realizados, mostrando mis habilidades y experiencia en el diseño y desarrollo de sitios web y aplicación móvil.
 
-To learn more about Next.js, take a look at the following resources:
+### Tecnologías utilizadas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+|                |
+|:--------------:|
+|  Next          |
+|  React         |
+|  React Icons   |
+|  Aos           |
+|  Tailwind      |
+|  JavaScript    |
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="right"><a href="#inicio">⬆ Volver al inicio</a></p>
 
-## Deploy on Vercel
+<!-- GETTING STARTED -->
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Cómo Empezar
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Instalación
+
+1. Clona el repositorio
+   ```sh
+   git clone https://github.com/RafaMojica/FRONT-Porfolio.git
+   ```
+2. Instala las dependencias NPM
+   ```sh
+   npm install
+   ```
+3. Corre el servidor
+   ```sh
+   npm run dev
+   ```
+
+<p align="right"><a href="#inicio">⬆ Volver al inicio</a></p>
+
+
+<!-- FUNCTIONALITIES -->
+
+## Funcionalidades
+
+  - [x] Inicio
+  - [x] Sobre Mí
+  - [x] Habilidades
+  - [x] Proyectos
+  - [x] Contacto
+  - [x] Observar CV
+  - [x] Ir a redes sociales
+  - [x] Ir a repositorios, web y ver demos de los proyectos
+  - [x] Enviar Mail
+  - [x] Versión Móvil
+
+<p align="right"><a href="#inicio">⬆ Volver al inicio</a></p>
+
+<!-- CONTRIBUTING -->
+
+## Como contribuir
+
+<p>¡Las contribuciones de la comunidad Dev nos ayudan a aprender, inspirarnos y crear cosas nuevas ¡Todas las contribuciones son bienvenidas!</p>
+<p>Si tienes alguna sugerencia para mejorar el proyecto, por favor realiza un fork del repositorio y crea un pull request</p>
+
+1. Realiza un __Fork__ al proyecto
+2. Crea tu rama de desarrollo (`git checkout -b feature/"Nombre de la rama"`)
+3. Realiza un commit de los cambios (`git commit -m 'Nombre del commit'`)
+4. Realiza un push de la rama (`git push origin feature/"nombre de la rama"`)
+5. Abre un Pull Request
+
+<p align="right"><a href="#inicio">⬆ Volver al inicio</a></p>
+
+<!-- CONTACT -->
+
+## Contacto
+
+<p align="center">
+    <a href="mailto:rafael.mojica27@gmail.com" target="_blank" rel="noopener noreferrer">
+        <img alt="Gmail" title="gmail" src="https://custom-icon-badges.demolab.com/badge/-rafael.mojica27@gmail.com-red?style=for-the-badge&logo=mention&logoColor=white"/></a>
+    <a href="https://drive.google.com/file/d/1P1VRNPb3dgXHkVWUlvW2f2LmG8UFFunP/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+        <img alt="CV" title="CV" src="https://custom-icon-badges.demolab.com/badge/-CV-F25278?style=for-the-badge&logo=download&logoColor=white"/></a>
+    <a href="https://rafaelmojica.vercel.app/" target="_blank" rel="noopener noreferrer">
+        <img alt="Portafolio" title="portafolio" src="https://custom-icon-badges.demolab.com/badge/-Portafolio-teal?style=for-the-badge&logo=link&logoColor=white"/></a>
+    <a href="https://www.linkedin.com/in/rafamojica/" target="_blank" rel="noopener noreferrer">
+        <img alt="Linkedin" title="linkedin" src="https://custom-icon-badges.demolab.com/badge/-Linkedin-blue?style=for-the-badge&logoColor=white&logo=linkedin"/></a>
+    <a href="https://www.instagram.com/rafa_mojica_/" target="_blank" rel="noopener noreferrer">
+        <img alt="Instagram" title="Instagram" src="https://custom-icon-badges.demolab.com/badge/-Instagram-purple?style=for-the-badge&logo=Instagram&logoColor=white"/></a>
+    <a href="https://github.com/RafaMojica?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <img alt="Repositorios" title="Mira mis repositorios" src="https://custom-icon-badges.demolab.com/badge/-Repositorios-grey?style=for-the-badge&logoColor=white&logo=github"/></a>
+</p>
+
+<p align="right"><a href="#inicio">⬆ Volver al inicio</a></p>
