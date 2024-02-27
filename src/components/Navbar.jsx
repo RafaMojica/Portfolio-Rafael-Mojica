@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import NavLogo from '../public/assets/img/LogoRM-Black.png'
+import NavLogo from '@/assets/img/LogoRM-Black.png'
 import SocialNetworks from "../common/SocialNetworks";
 
 const Navbar = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import photoPorfile from "../public/assets/img/Photo-ConBackground.jpg";
+import photoPorfile from "@/assets/img/Photo-ConBackground.jpg";
 import {BsFillFileEarmarkSpreadsheetFill} from "react-icons/bs"
 
 const About = () => {

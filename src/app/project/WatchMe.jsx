@@ -1,8 +1,8 @@
 import React from "react";
-import dataProyect from "../utils/dataProject";
-import Technologies from "../common/Technologies";
-import DescriptionButton from "../common/DescriptionButton";
-import HeaderProject from "../common/HeaderProject";
+import dataProyect from "../../utils/dataProject";
+import Technologies from "../../common/Technologies";
+import DescriptionButton from "../../common/DescriptionButton";
+import HeaderProject from "../../common/HeaderProject";
 import { AiFillCaretRight } from "react-icons/ai";
 
 const WhatchMe = () => {
