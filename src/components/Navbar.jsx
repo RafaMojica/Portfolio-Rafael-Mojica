@@ -1,13 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import NavLogo from '@/assets/img/LogoRM-Black.png'
+import React, { useEffect, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import NavLogo from "@/assets/img/LogoRM-Black.png";
 import SocialNetworks from "../common/SocialNetworks";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
 
   const handleNav = () => {
     setNav(!nav);
@@ -21,14 +23,20 @@ const Navbar = () => {
         setShadow(false);
       }
     };
-    window.addEventListener('scroll', handleShadow);
+    window.addEventListener("scroll", handleShadow);
   }, []);
 
   return (
-    <div className={shadow ? "fixed w-full h-20 shadow-xl z-[100] bg-background" : "fixed w-full h-20 z-[100]"}>
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] bg-background"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-2 lg:px-16">
         <Link href="/">
-          <Image src={NavLogo} alt="Logo RM" width="60" height="60"/>
+          <Image src={NavLogo} alt="Logo RM" width="60" height="60" />
         </Link>
         <div>
           <ul className="hidden md:flex uppercase">
@@ -54,21 +62,33 @@ const Navbar = () => {
         </div>
       </div>
 
-
       {/* Mobile Menu */}
 
-      <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""}>
-        <div className={
-          nav 
-            ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-background p-10 ease-in duration-500" 
-            : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
+      >
+        <div
+          className={
+            nav
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-background p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <Image src={NavLogo} alt="Logo Pagina RM" width="60" height="60"/>
+              <Image
+                src={NavLogo}
+                alt="Logo Pagina RM"
+                width="60"
+                height="60"
+              />
             </Link>
-            <div className='rounded-full shadow-lg shadow-shodowGrey400 p-3 cursor-pointer' onClick={handleNav}>
+            <div
+              className="rounded-full shadow-lg shadow-shodowGrey400 p-3 cursor-pointer"
+              onClick={handleNav}
+            >
               <AiOutlineClose size={25} />
             </div>
           </div>
@@ -78,19 +98,29 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/">Inicio</Link>
+                <Link onClick={() => setNav(false)} href="/">
+                  Inicio
+                </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#about">Sobre Mí</Link>
+                <Link onClick={() => setNav(false)} href="/#about">
+                  Sobre Mí
+                </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#skills">Habilidades</Link>
+                <Link onClick={() => setNav(false)} href="/#skills">
+                  Habilidades
+                </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#projects">Proyectos</Link>
+                <Link onClick={() => setNav(false)} href="/#projects">
+                  Proyectos
+                </Link>
               </li>
               <li className="py-4 text-sm">
-                <Link onClick={() => setNav(false)} href="/#contact">Contacto</Link>
+                <Link onClick={() => setNav(false)} href="/#contact">
+                  Contacto
+                </Link>
               </li>
             </ul>
             <div className="pt-2">

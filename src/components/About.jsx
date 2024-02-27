@@ -1,14 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import photoPorfile from "@/assets/img/Photo-ConBackground.jpg";
-import {BsFillFileEarmarkSpreadsheetFill} from "react-icons/bs"
+import { BsFillFileEarmarkSpreadsheetFill } from "react-icons/bs";
 
 const About = () => {
   return (
     <div id="about" className="w-full px-2 flex items-center py-16 md:py-24">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-16">
-        <div data-aos="zoom-in" className="flex flex-col justify-center col-span-2">
-          <p className="uppercase text-xl tracking-widest text-secondary font-bold">Sobre Mí</p>
+        <div
+          data-aos="zoom-in"
+          className="flex flex-col justify-center col-span-2"
+        >
+          <p className="uppercase text-xl tracking-widest text-secondary font-bold">
+            Sobre Mí
+          </p>
           <h2 className="py-4">¿Quién Soy?</h2>
           <p className="py-2 text-gray600">
             ¡Te cuento un poco de mí! A comienzos del 2022, después de un tiempo
@@ -28,19 +33,32 @@ const About = () => {
             aprendizaje trabajando en equipo, conociendo nuevas personar y
             formando amistades.
           </p>
-          <a href="https://drive.google.com/file/d/1P1VRNPb3dgXHkVWUlvW2f2LmG8UFFunP/view?usp=share_link" target="_blank" rel="noreferrer" >
-          <div className="flex items-center justify-center py-2">
-            <div className={`flex rounded-full shadow-lg shadow-shodowGrey400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}>
-              <BsFillFileEarmarkSpreadsheetFill size={20} />
-              <p className="font-bold px-2">CV</p>
+          <a
+            href="https://drive.google.com/file/d/1P1VRNPb3dgXHkVWUlvW2f2LmG8UFFunP/view?usp=share_link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="flex items-center justify-center py-2">
+              <div
+                className={`flex rounded-full shadow-lg shadow-shodowGrey400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}
+              >
+                <BsFillFileEarmarkSpreadsheetFill size={20} />
+                <p className="font-bold px-2">CV</p>
+              </div>
             </div>
-          </div>
           </a>
         </div>
-        <div data-aos="zoom-in" className="flex h-full items-center w-[80%] mx-auto md:w-full">
+        <div
+          data-aos="zoom-in"
+          className="flex h-full items-center w-[80%] mx-auto md:w-full"
+        >
           <div className="mt-12 md:m-0 rounded-3xl bg-gradient-to-r from-terciario to-gray300">
             <div className="rounded-3xl rotate-12 duration-300 hover:rotate-0 overflow-hidden">
-              <Image className="rounded-3xl" src={photoPorfile} alt="Foto de Perfil" />
+              <Image
+                className="rounded-3xl"
+                src={photoPorfile}
+                alt="Foto de Perfil"
+              />
             </div>
           </div>
         </div>

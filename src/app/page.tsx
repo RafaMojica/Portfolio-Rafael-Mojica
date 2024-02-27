@@ -1,5 +1,3 @@
-"use client";
-
 import About from "@/components/About";
 import Start from "@/components/Start";
 import Navbar from "@/components/Navbar";

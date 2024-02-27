@@ -7,7 +7,7 @@ const dataProjects = [
   {
     name: "Portafolio",
     type: "Aplicacíon Web",
-    projectUrl: "/Porfolio",
+    projectUrl: "/project-porfolio",
     image: HomePorfolio,
     sumamary: "Portafolio profesional Rafael Mojica",
     technologies: ["Next.js", "React.js", "Tailwind", "Javascript", "Aos"],
@@ -18,7 +18,7 @@ const dataProjects = [
   {
     name: "Watch Me",
     type: "Aplicacíon Web",
-    projectUrl: "/WatchMe",
+    projectUrl: "/project-watch-me",
     image: HomeWatchMe,
     sumamary: "Sitio Web enfocado en películas y series de televisión",
     technologies: [
@@ -39,7 +39,7 @@ const dataProjects = [
   {
     name: "RRHH",
     type: "Aplicacíon Movil",
-    projectUrl: "/RRHH",
+    projectUrl: "/project-rrhh",
     image: HomeRRHH,
     sumamary:
       "Aplicación Móvil para facilitar los procesos del departamento de recursos Humanos",
@@ -61,7 +61,7 @@ const dataProjects = [
   {
     name: "Como en Casa",
     type: "Aplicacíon Web",
-    projectUrl: "/ComoEnCasa",
+    projectUrl: "/project-como-en-casa",
     image: HomeComoEnCasa,
     sumamary: "Sitio web E-commerce con temática de restaurante",
     technologies: [
