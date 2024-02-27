@@ -1,12 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import SocialNetworks from "../common/SocialNetworks";
-import { BsArrowDown } from "react-icons/bs";
 import Link from "next/link";
-import Typed from "typed.js";
+import LinkNetworks from "@/common/LinkNetworks";
+import {
+  ArrowDown,
+  Github,
+  Instagram,
+  Linkedin,
+  Mail,
+  Mobil,
+} from "@/common/Icons";
 
-const Start = () => {
+const Introduction = () => {
   const [arrow, setArrow] = useState(true);
 
   useEffect(() => {
@@ -20,28 +26,15 @@ const Start = () => {
     window.addEventListener("scroll", handleArrow);
   }, []);
 
-  useEffect(() => {
-    const typed = new Typed("#name", {
-      strings: ["Rafael Mojica"],
-      typeSpeed: 150,
-      backSpeed: 150,
-      startDelay: 400,
-      backDelay: 2000,
-      loop: true,
-    });
-
-    return () => typed.destroy();
-  }, []);
-
   return (
-    <div id="start" className="w-full h-screen text-center">
+    <div id="introduction" className="w-full h-screen text-center">
       <div className="relative max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm sm:text-base tracking-widest text-gray600">
             Construyamos algo juntos
           </p>
           <h1 className="py-4 text-gray700">
-            Hola, soy <span id="name" className="text-secondary"></span>
+            Hola, soy <span className="text-secondary">Rafael Mojica</span>
           </h1>
           <h1 className="py-2 text-gray700">Full-Stack Web Developer</h1>
           <p className="py-4 text-gray600 sm:max-w-[70%] m-auto text-sm sm:text-lg">
@@ -49,7 +42,21 @@ const Start = () => {
             experiencia y conocimientos en el mundo IT.
           </p>
           <div className="flex items-center justify-between max-w-[400px] m-auto py-4">
-            <SocialNetworks size={20} padding={6} animation={"zoom-in"} />
+            <LinkNetworks href="https://www.linkedin.com/in/rafamojica/">
+              <Linkedin />
+            </LinkNetworks>
+            <LinkNetworks href="https://github.com/RafaMojica">
+              <Github />
+            </LinkNetworks>
+            <LinkNetworks href="https://instagram.com/rafa_mojica_">
+              <Instagram />
+            </LinkNetworks>
+            <LinkNetworks href="mailto:rafael.mojica27@gmail.com">
+              <Mail />
+            </LinkNetworks>
+            <LinkNetworks href="https://wa.link/r6856s">
+              <Mobil />
+            </LinkNetworks>
           </div>
         </div>
         <div
@@ -58,7 +65,7 @@ const Start = () => {
           }
         >
           <Link href="/#about">
-            <BsArrowDown className="animate-bounce text-secondary" size={35} />
+            <ArrowDown className="animate-bounce text-secondary" />
           </Link>
         </div>
       </div>
@@ -66,4 +73,4 @@ const Start = () => {
   );
 };
 
-export default Start;
+export default Introduction;

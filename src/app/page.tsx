@@ -1,5 +1,5 @@
 import About from "@/components/About";
-import Start from "@/components/Start";
+import Introduction from "@/components/Introduction";
 import Navbar from "@/components/Navbar";
 import Skills from "../components/Skills";
 import Projects from "@/components/Projects";
@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Start />
+      <Introduction />
       <About />
       <Skills />
       <Projects />

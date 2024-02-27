@@ -1,21 +1,52 @@
 import Link from "next/link";
 import React from "react";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import SocialNetworks from "../common/SocialNetworks";
+import LinkNetworks from "@/common/LinkNetworks";
+import {
+  Github,
+  Instagram,
+  Linkedin,
+  Mail,
+  Mobil,
+  ArrowUp,
+} from "@/common/Icons";
 
 const Contact = () => {
   return (
     <div id="contact" className="w-full px-2 pt-16 md:pt-24">
       <div className="max-w-[1240px] m-auto">
-        <p className="uppercase text-xl tracking-widest text-secondary font-bold">Contacto</p>
+        <p className="uppercase text-xl tracking-widest text-secondary font-bold">
+          Contacto
+        </p>
         <h2 className="py-4">¿Qué necesitas?</h2>
         <div className="md:flex gap-8 md:max-w-[80%] m-auto">
-          <div data-aos="zoom-in" data-aos-offset="-200" className="flex md:flex-col items-center justify-between py-5 lg:py-10">
-            <SocialNetworks size={20} padding={6} animation={"none"} />
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            className="flex md:flex-col items-center justify-between py-5 lg:py-10"
+          >
+            <LinkNetworks href="https://www.linkedin.com/in/rafamojica/">
+              <Linkedin />
+            </LinkNetworks>
+            <LinkNetworks href="https://github.com/RafaMojica">
+              <Github />
+            </LinkNetworks>
+            <LinkNetworks href="https://instagram.com/rafa_mojica_">
+              <Instagram />
+            </LinkNetworks>
+            <LinkNetworks href="mailto:rafael.mojica27@gmail.com">
+              <Mail />
+            </LinkNetworks>
+            <LinkNetworks href="https://wa.link/r6856s">
+              <Mobil />
+            </LinkNetworks>
           </div>
 
-          <div data-aos="zoom-in" data-aos-offset="-200" className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10">
-            <form action="https://formspree.io/f/xnqyljlz" method="POST" >
+          <div
+            data-aos="zoom-in"
+            data-aos-offset="-200"
+            className="w-full h-auto shadow-xl shadow-shodowGrey400 rounded-xl p-4 lg:p-10"
+          >
+            <form action="https://formspree.io/f/xnqyljlz" method="POST">
               <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                 <div className="flex flex-col">
                   <label className="uppercase text-sm py-2">Nombre</label>
@@ -70,7 +101,7 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="text-secondary rounded-full shadow-lg shadow-shodowGrey400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain">
-              <HiOutlineChevronDoubleUp size={30} />
+              <ArrowUp />
             </div>
           </Link>
         </div>

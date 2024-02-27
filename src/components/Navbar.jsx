@@ -5,7 +5,8 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import NavLogo from "@/assets/img/LogoRM-Black.png";
-import SocialNetworks from "../common/SocialNetworks";
+import LinkNetworks from "@/common/LinkNetworks";
+import { Github, Instagram, Linkedin, Mail, Mobil } from "@/common/Icons";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -125,7 +126,30 @@ const Navbar = () => {
             </ul>
             <div className="pt-2">
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <SocialNetworks size={0} padding={3} animation={"none"} />
+                <LinkNetworks
+                  href="https://www.linkedin.com/in/rafamojica/"
+                  padding="3"
+                >
+                  <Linkedin />
+                </LinkNetworks>
+                <LinkNetworks href="https://github.com/RafaMojica" padding="3">
+                  <Github />
+                </LinkNetworks>
+                <LinkNetworks
+                  href="https://instagram.com/rafa_mojica_"
+                  padding="3"
+                >
+                  <Instagram />
+                </LinkNetworks>
+                <LinkNetworks
+                  href="mailto:rafael.mojica27@gmail.com"
+                  padding="3"
+                >
+                  <Mail />
+                </LinkNetworks>
+                <LinkNetworks href="https://wa.link/r6856s" padding="3">
+                  <Mobil />
+                </LinkNetworks>
               </div>
             </div>
           </div>
