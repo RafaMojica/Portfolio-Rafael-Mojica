@@ -1,75 +1,61 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { ArrowDown } from "@/common/Icons";
 import Link from "next/link";
-import LinkNetworks from "@/common/LinkNetworks";
-import {
-  ArrowDown,
-  Github,
-  Instagram,
-  Linkedin,
-  Mail,
-  Mobil,
-} from "@/common/Icons";
+import useScroll from "@/hook/useScroll";
+import Layout from "@/common/Layout";
+import socialNetworks from "@/data/SocialNetworks";
+import IconButton from "@/common/IconButton";
 
 const Introduction = () => {
-  const [arrow, setArrow] = useState(true);
-
-  useEffect(() => {
-    const handleArrow = () => {
-      if (window.scrollY >= 90) {
-        setArrow(false);
-      } else {
-        setArrow(true);
-      }
-    };
-    window.addEventListener("scroll", handleArrow);
-  }, []);
+  const scroll = useScroll(90);
 
   return (
-    <div id="introduction" className="w-full h-screen text-center">
-      <div className="relative max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
-        <div>
-          <p className="uppercase text-sm sm:text-base tracking-widest text-gray600">
+    <Layout id="introduction" className="h-screen">
+      <div className="relative h-screen flex justify-center items-center text-center">
+        <header className="flex flex-col gap-6">
+          <p className="uppercase text-sm sm:text-base tracking-widest text-primary">
             Construyamos algo juntos
           </p>
-          <h1 className="py-4 text-gray700">
+          <h1 className="font-bold">
             Hola, soy <span className="text-secondary">Rafael Mojica</span>
+            <span className="pt-5 block">Full-Stack Web Developer</span>
           </h1>
-          <h1 className="py-2 text-gray700">Full-Stack Web Developer</h1>
-          <p className="py-4 text-gray600 sm:max-w-[70%] m-auto text-sm sm:text-lg">
+          <p className="text-primary sm:max-w-[70%] m-auto text-sm sm:text-lg">
             A través de este espacio, espero poder compartir contigo mi pasión,
             experiencia y conocimientos en el mundo IT.
           </p>
-          <div className="flex items-center justify-between max-w-[400px] m-auto py-4">
-            <LinkNetworks href="https://www.linkedin.com/in/rafamojica/">
-              <Linkedin />
-            </LinkNetworks>
-            <LinkNetworks href="https://github.com/RafaMojica">
-              <Github />
-            </LinkNetworks>
-            <LinkNetworks href="https://instagram.com/rafa_mojica_">
-              <Instagram />
-            </LinkNetworks>
-            <LinkNetworks href="mailto:rafael.mojica27@gmail.com">
-              <Mail />
-            </LinkNetworks>
-            <LinkNetworks href="https://wa.link/r6856s">
-              <Mobil />
-            </LinkNetworks>
-          </div>
-        </div>
-        <div
+          <ul className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto py-2">
+            {socialNetworks.map(({ name, href, Icon }) => {
+              return (
+                <IconButton
+                  key={`${name}`}
+                  href={`${href}`}
+                  className="hover:text-background"
+                >
+                  <Icon />
+                </IconButton>
+              );
+            })}
+          </ul>
+        </header>
+        <footer
           className={
-            arrow ? "absolute left-[45%] md:left-[48%] bottom-5" : "hidden"
+            scroll ? "absolute left-[41%] md:left-[47%] bottom-5" : "hidden"
           }
         >
           <Link href="/#about">
-            <ArrowDown className="animate-bounce text-secondary" />
+            <ArrowDown
+              width="60"
+              height="60"
+              strokeWidth="1"
+              className="animate-bounce text-secondary"
+            />
           </Link>
-        </div>
+        </footer>
       </div>
-    </div>
+    </Layout>
   );
 };
 
