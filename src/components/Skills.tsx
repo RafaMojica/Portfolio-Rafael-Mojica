@@ -1,6 +1,6 @@
 import Layout from "@/common/Layout";
 import IconButton from "@/common/IconButton";
-import stack from "@/data/Skills";
+import stack from "@/data/skills";
 import React from "react";
 
 const Skills = () => {

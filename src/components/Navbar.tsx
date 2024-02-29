@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useScroll from "@/hook/useScroll";
 import { Menu, RM, CloseX } from "@/common/Icons";
-import socialNetworks from "@/data/SocialNetworks";
+import socialNetworks from "@/data/socialNetworks";
 import IconButton from "@/common/IconButton";
 
 const Navbar = () => {

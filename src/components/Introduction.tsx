@@ -5,7 +5,7 @@ import { ArrowDown } from "@/common/Icons";
 import Link from "next/link";
 import useScroll from "@/hook/useScroll";
 import Layout from "@/common/Layout";
-import socialNetworks from "@/data/SocialNetworks";
+import socialNetworks from "@/data/socialNetworks";
 import IconButton from "@/common/IconButton";
 
 const Introduction = () => {
