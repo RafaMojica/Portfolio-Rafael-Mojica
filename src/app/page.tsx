@@ -1,9 +1,8 @@
-import About from "@/components/About";
+// import About from "@/components/About";
 import Introduction from "@/components/Introduction";
 import Navbar from "@/components/Navbar";
 import Skills from "../components/Skills";
-import Projects from "@/components/Projects";
-import Contact from "@/components/Contact";
+// import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -11,10 +10,9 @@ export default function Home() {
     <>
       <Navbar />
       <Introduction />
-      <About />
+      {/* <About /> */}
+      {/* <Projects /> */}
       <Skills />
-      <Projects />
-      <Contact />
       <Footer />
     </>
   );
