@@ -8,7 +8,7 @@ const Projects = () => {
       <div className="max-w-[1240px] mx-auto">
         <p className="uppercase text-xl tracking-widest text-secondary font-bold">Proyectos</p>
         <h2 className="py-4">¿Qué he desarrollado?</h2>
-        <div data-aos="zoom-in" className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {dataProject.map( project =>
             <ProjectItem key={project.name} project={project} />
           )}
