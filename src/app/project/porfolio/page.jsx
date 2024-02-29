@@ -1,8 +1,8 @@
 import React from "react";
-import dataProyect from "../../utils/dataProject";
-import Technologies from "../../common/Technologies";
-import DescriptionButton from "../../common/DescriptionButton";
-import HeaderProject from "../../common/HeaderProject";
+import dataProyect from "../../../utils/dataProject";
+import Technologies from "../../../common/Technologies";
+import DescriptionButton from "../../../common/DescriptionButton";
+import HeaderProject from "../../../common/HeaderProject";
 import { AiFillCaretRight } from "react-icons/ai";
 
 const Porfolio = () => {
@@ -13,7 +13,7 @@ const Porfolio = () => {
     <div className="w-full">
       <HeaderProject name={name} image={image} type={type} />
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-4 gap-8 py-6">
-        <div data-aos="zoom-in" className="col-span-4 md:col-span-3">
+        <div className="col-span-4 md:col-span-3">
           <h2 className="py-4">Descripción</h2>
           <p>
             Mi portafolio personal web donde conocerás una poco más de mí, aquí
@@ -44,8 +44,6 @@ const Porfolio = () => {
           </div>
         </div>
         <div
-          data-aos="zoom-in"
-          data-aos-offset="-200"
           className="col-span-4 md:col-span-1 shadow-xl shadow-shodowGrey400 rounded-xl p-6"
         >
           <p className="text-center font-bold pb-2">Tecnologías</p>
