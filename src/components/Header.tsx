@@ -36,13 +36,10 @@ const Navbar = () => {
               <Link href="/#about">Sobre mí</Link>
             </li>
             <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
-              <Link href="/#skills">Habilidades</Link>
-            </li>
-            <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
               <Link href="/#projects">Proyectos</Link>
             </li>
             <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
-              <Link href="/#contact">Contacto</Link>
+              <Link href="/#skills">Habilidades</Link>
             </li>
           </ul>
           <div className="md:hidden" onClick={handleNav}>
@@ -91,18 +88,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setNav(false)} href="/#skills">
-                  Habilidades
-                </Link>
-              </li>
-              <li>
                 <Link onClick={() => setNav(false)} href="/#projects">
                   Proyectos
                 </Link>
               </li>
               <li>
-                <Link onClick={() => setNav(false)} href="/#contact">
-                  Contacto
+                <Link onClick={() => setNav(false)} href="/#skills">
+                  Habilidades
                 </Link>
               </li>
             </ul>
