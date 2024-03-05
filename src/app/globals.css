@@ -22,3 +22,9 @@ html {
     @apply shadow-xl shadow-gray400 rounded-xl uppercase bg-gradient-to-r from-secondary to-terciario text-background;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
