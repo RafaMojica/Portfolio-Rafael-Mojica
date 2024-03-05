@@ -14,4 +14,4 @@ export interface IconDescription {
   Icon: FC<IconProps>;
   color: string;
   href: string;
-};
+}
