@@ -1,7 +1,7 @@
 import { Linkedin, Github, Instagram, Mail, Mobil } from "@/common/Icons";
 import { IconDescription } from "@/types/icon.types";
 
-const socialNetworks: IconDescription[] = [
+const SOCIAL_NETWORKS: IconDescription[] = [
   {
     name: "linkedin",
     Icon: Linkedin,
@@ -34,4 +34,4 @@ const socialNetworks: IconDescription[] = [
   },
 ];
 
-export default socialNetworks;
+export default SOCIAL_NETWORKS;
