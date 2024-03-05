@@ -4,8 +4,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useScroll from "@/hook/useScroll";
 import { Menu, RM, CloseX } from "@/common/Icons";
-import socialNetworks from "@/data/socialNetworks";
 import IconButton from "@/common/IconButton";
+import SOCIAL_NETWORKS from "@/data/socialNetworks";
 
 const Navbar = () => {
   const scroll = useScroll(90);
@@ -100,7 +100,7 @@ const Navbar = () => {
             </ul>
             <div className="mt-4">
               <ul className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
-                {socialNetworks.map(({ name, href, Icon }) => {
+                {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
                   return (
                     <IconButton key={`${name}`} href={`${href}`}>
                       <Icon width="24" height="24" />
