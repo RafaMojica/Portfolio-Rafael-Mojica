@@ -1,13 +1,33 @@
-import Layout from "@/common/Layout";
+import { SOCIAL_NETWORKS_FOOTER } from "@/data/socialNetworks";
 import React from "react";
 
 const Footer = () => {
   return (
-    <Layout id="contact" className="pt-11 pb-6 md:pt-16">
-      <p className="text-gray400 text-sm sm:text-base flex items-center justify-center">
-        Copyright © 2023 Rafael Mojica. All Rights Reserved
-      </p>
-    </Layout>
+    <footer
+      id="contact"
+      className="max-w-[950px] mx-auto px-3 pb-7 text-gray400"
+    >
+      <div className="flex gap-2 items-center justify-center">
+        <p className="text-sm sm:text-base flex items-center justify-center">
+          2024 • Rafael Mojica •
+        </p>
+        <div className="flex gap-2">
+          {SOCIAL_NETWORKS_FOOTER.map(({ name, href, Icon }) => {
+            return (
+              <a
+                key={name}
+                href={href}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-secondary"
+              >
+                <Icon />
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    </footer>
   );
 };
 
