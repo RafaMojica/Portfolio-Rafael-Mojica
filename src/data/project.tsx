@@ -1,13 +1,16 @@
 import { Project } from "@/types/project.types";
 import TECHNOLOGIES from "./technologies";
+import mockUp from "../../public/MockUpPrueba.png";
+import mockUp2 from "../../public/MockUpPrueba2.png";
+import mockMobil from "../../public/MackUpMovil.png";
 
-const PROJECT: Project[] = [
+const PROJECTS: Project[] = [
   {
     name: "Fast Delivery",
     type: "Aplicación Web",
     web: "",
     demo: "",
-    image: [],
+    image: [mockUp],
     description:
       "Aplicación que ofrece el servicio de mensajeria de un establecimiento de repartos.",
     technologies: [
@@ -35,7 +38,7 @@ const PROJECT: Project[] = [
     type: "Aplicación Móvil",
     web: "",
     demo: "",
-    image: [],
+    image: [mockUp2],
     description:
       "Aplicación con el fin de automatizar procesos en el departamento de recursos humanos.",
     technologies: [
@@ -56,7 +59,7 @@ const PROJECT: Project[] = [
     type: "Sitio Web",
     web: "",
     demo: "",
-    image: [],
+    image: [mockMobil],
     description:
       "Sitio web que brinda un gran catálogo de películas y series de televisión.",
     technologies: [
@@ -79,7 +82,7 @@ const PROJECT: Project[] = [
     type: "Sitio Web",
     web: "",
     demo: "",
-    image: [],
+    image: [mockMobil],
     description: "Sitio web E-commerce con temática de restaurante",
     technologies: [
       TECHNOLOGIES.React,
@@ -98,4 +101,4 @@ const PROJECT: Project[] = [
   },
 ];
 
-export default PROJECT;
+export default PROJECTS;

@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { Technology } from "./technology.types";
 
 interface Repository {
@@ -11,7 +12,7 @@ export interface Project {
   type: string;
   web: string;
   demo: string;
-  image: string[];
+  image: StaticImageData[];
   description: string;
   technologies: Technology[];
   repositoryFront: Repository;
