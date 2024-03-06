@@ -1,4 +1,8 @@
-import { Linkedin, Github, Instagram, Mail, Mobil } from "@/common/Icons";
+import { Github } from "@/icons/Github";
+import { Instagram } from "@/icons/Instagram";
+import { Linkedin } from "@/icons/Linkedin";
+import { Mail } from "@/icons/Mail";
+import { Mobil } from "@/icons/Mobil";
 import { IconDescription } from "@/types/icon.types";
 
 const SOCIAL_NETWORKS: IconDescription[] = [

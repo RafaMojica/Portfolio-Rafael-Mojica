@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { ArrowDown } from "@/common/Icons";
+import { ArrowDown } from "@/icons/ArrowDown";
 import Link from "next/link";
 import useScroll from "@/hook/useScroll";
 import Layout from "@/common/Layout";

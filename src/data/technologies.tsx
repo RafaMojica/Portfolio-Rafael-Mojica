@@ -1,31 +1,29 @@
-import {
-  AWS,
-  CSS,
-  Docker,
-  Express,
-  Figma,
-  Git,
-  GitHub,
-  HTML,
-  JavaScript,
-  Jest,
-  Linux,
-  MaterialUi,
-  MongoDB,
-  Mongoose,
-  Next,
-  Node,
-  Notion,
-  PostgreSQL,
-  Postman,
-  React,
-  Redux,
-  Sass,
-  Sequialize,
-  Tailwind,
-  TypeScript,
-  VSCode,
-} from "@/common/Icons";
+import { AWS } from "@/icons/AWS";
+import { CSS } from "@/icons/CSS";
+import { Docker } from "@/icons/Docker";
+import { Express } from "@/icons/Express";
+import { Figma } from "@/icons/Figma";
+import { Git } from "@/icons/Git";
+import { GithubOfficial } from "@/icons/GithubOfficial";
+import { HTML } from "@/icons/HTML";
+import { JavaScript } from "@/icons/JavaScript";
+import { Jest } from "@/icons/Jest";
+import { Linux } from "@/icons/Linux";
+import { MaterialUI } from "@/icons/MaterialUI";
+import { MongoDB } from "@/icons/MongoDB";
+import { Mongoose } from "@/icons/Mongoose";
+import { Next } from "@/icons/Next";
+import { Node } from "@/icons/Node";
+import { Notion } from "@/icons/Notion";
+import { PostgreSQL } from "@/icons/PostgreSQL";
+import { Postman } from "@/icons/Postman";
+import { React } from "@/icons/React";
+import { Redux } from "@/icons/Redux";
+import { Sass } from "@/icons/Sass";
+import { Sequialize } from "@/icons/Sequialize";
+import { Tailwind } from "@/icons/Tailwind";
+import { TypeScript } from "@/icons/TypeScript";
+import { VSCode } from "@/icons/VSCode";
 import { Technologies } from "@/types/technology.types";
 
 const TECHNOLOGIES: Technologies = {
@@ -121,7 +119,7 @@ const TECHNOLOGIES: Technologies = {
   },
   MaterialUI: {
     name: "MaterialUI",
-    Icon: MaterialUi,
+    Icon: MaterialUI,
     color: "#1FA6CA",
     href: "https://mui.com/",
   },
@@ -151,7 +149,7 @@ const TECHNOLOGIES: Technologies = {
   },
   GitHub: {
     name: "GitHub",
-    Icon: GitHub,
+    Icon: GithubOfficial,
     color: "#181616",
     href: "https://github.com/",
   },
