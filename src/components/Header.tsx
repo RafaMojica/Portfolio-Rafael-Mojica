@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useScroll from "@/hook/useScroll";
 import IconButton from "@/common/IconButton";
-import SOCIAL_NETWORKS from "@/data/socialNetworks";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 import { RM } from "@/icons/RM";
 import { Menu } from "@/icons/Menu";
 import { CloseX } from "@/icons/CloseX";

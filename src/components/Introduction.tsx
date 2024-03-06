@@ -6,7 +6,7 @@ import Link from "next/link";
 import useScroll from "@/hook/useScroll";
 import Layout from "@/common/Layout";
 import IconButton from "@/common/IconButton";
-import SOCIAL_NETWORKS from "@/data/socialNetworks";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Introduction = () => {
   const scroll = useScroll(90);

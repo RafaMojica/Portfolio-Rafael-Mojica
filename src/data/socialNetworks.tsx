@@ -38,7 +38,7 @@ const CONTACT = {
   },
 };
 
-const SOCIAL_NETWORKS: IconDescription[] = [
+export const SOCIAL_NETWORKS: IconDescription[] = [
   CONTACT.linkedin,
   CONTACT.github,
   CONTACT.instagram,
@@ -51,5 +51,3 @@ export const SOCIAL_NETWORKS_FOOTER: IconDescription[] = [
   CONTACT.github,
   CONTACT.instagram,
 ];
-
-export default SOCIAL_NETWORKS;
