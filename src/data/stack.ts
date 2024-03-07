@@ -1,7 +1,7 @@
 import { Technology } from "@/types/technology.types";
-import TECHNOLOGIES from "./technologies";
+import { TECHNOLOGIES } from "./technologies";
 
-const STACK: Technology[] = [
+export const STACK: Technology[] = [
   TECHNOLOGIES.Next,
   TECHNOLOGIES.React,
   TECHNOLOGIES.Redux,
@@ -28,5 +28,3 @@ const STACK: Technology[] = [
   TECHNOLOGIES.Figma,
   TECHNOLOGIES.Notion,
 ];
-
-export default STACK;

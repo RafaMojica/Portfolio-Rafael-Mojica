@@ -26,7 +26,7 @@ import { TypeScript } from "@/icons/TypeScript";
 import { VSCode } from "@/icons/VSCode";
 import { Technologies } from "@/types/technology.types";
 
-const TECHNOLOGIES: Technologies = {
+export const TECHNOLOGIES: Technologies = {
   Next: {
     name: "Next",
     Icon: Next,
@@ -184,5 +184,3 @@ const TECHNOLOGIES: Technologies = {
     href: "https://www.notion.so/",
   },
 };
-
-export default TECHNOLOGIES;

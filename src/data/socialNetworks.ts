@@ -3,9 +3,9 @@ import { Instagram } from "@/icons/Instagram";
 import { Linkedin } from "@/icons/Linkedin";
 import { Mail } from "@/icons/Mail";
 import { Mobil } from "@/icons/Mobil";
-import { IconDescription } from "@/types/icon.types";
+import { Contact, SocialNetworks } from "@/types/socialNetworks.types";
 
-const CONTACT = {
+const CONTACT: Contact = {
   linkedin: {
     name: "linkedin",
     Icon: Linkedin,
@@ -38,7 +38,7 @@ const CONTACT = {
   },
 };
 
-export const SOCIAL_NETWORKS: IconDescription[] = [
+export const SOCIAL_NETWORKS_INTRODUCTION: SocialNetworks[] = [
   CONTACT.linkedin,
   CONTACT.github,
   CONTACT.instagram,
@@ -46,7 +46,7 @@ export const SOCIAL_NETWORKS: IconDescription[] = [
   CONTACT.mobil,
 ];
 
-export const SOCIAL_NETWORKS_FOOTER: IconDescription[] = [
+export const SOCIAL_NETWORKS_FOOTER: SocialNetworks[] = [
   CONTACT.linkedin,
   CONTACT.github,
   CONTACT.instagram,

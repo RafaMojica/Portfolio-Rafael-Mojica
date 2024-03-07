@@ -6,7 +6,7 @@ import Link from "next/link";
 import useScroll from "@/hook/useScroll";
 import Layout from "@/common/Layout";
 import IconButton from "@/common/IconButton";
-import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
+import { SOCIAL_NETWORKS_INTRODUCTION } from "@/data/socialNetworks";
 
 const Introduction = () => {
   const scroll = useScroll(90);
@@ -27,7 +27,7 @@ const Introduction = () => {
             experiencia y conocimientos en el mundo IT.
           </p>
           <ul className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto py-2">
-            {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
+            {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
               return (
                 <IconButton
                   key={`${name}`}

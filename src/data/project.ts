@@ -1,10 +1,10 @@
 import { Project } from "@/types/project.types";
-import TECHNOLOGIES from "./technologies";
+import { TECHNOLOGIES } from "./technologies";
 import mockUp from "../../public/MockUpPrueba.png";
 import mockUp2 from "../../public/MockUpPrueba2.png";
 import mockMobil from "../../public/MackUpMovil.png";
 
-const PROJECTS: Project[] = [
+export const PROJECTS: Project[] = [
   {
     name: "Fast Delivery",
     type: "Aplicación Web",
@@ -100,5 +100,3 @@ const PROJECTS: Project[] = [
     },
   },
 ];
-
-export default PROJECTS;

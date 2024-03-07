@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import useScroll from "@/hook/useScroll";
 import IconButton from "@/common/IconButton";
-import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
+import { SOCIAL_NETWORKS_INTRODUCTION } from "@/data/socialNetworks";
 import { RM } from "@/icons/RM";
 import { Menu } from "@/icons/Menu";
 import { CloseX } from "@/icons/CloseX";
@@ -102,7 +102,7 @@ const Navbar = () => {
             </ul>
             <div className="mt-4">
               <ul className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
-                {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
+                {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
                   return (
                     <IconButton key={`${name}`} href={`${href}`}>
                       <Icon width="24" height="24" />
