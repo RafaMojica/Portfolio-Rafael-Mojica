@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Image from "next/image";
-import { Project } from "@/types/project.types";
+import type { Project } from "@/types/project.types";
 
 const Project: FC<Project> = ({
   name,
