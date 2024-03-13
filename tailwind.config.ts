@@ -6,15 +6,23 @@ const config: Config = {
     "./src/common/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         background: "#ecf0f3",
-        primary: "#4B5563",
+        primary: "#000000",
         secondary: "#5651e5",
-        gray400: "#9ca3af",
-        terciario: "#709dff", //Degraded
-        buttonBgProject: "white",
+        description: "#4B5563",
+        shadow: "#9ca3af",
+
+        dark: {
+          background: "#000000",
+          primary: "#ffffff",
+          secondary: "#5651e5",
+          description: "#ecf0f3",
+          shadow: "#9ca3af",
+        },
       },
     },
   },

@@ -14,7 +14,7 @@ export const GithubOfficial: FC<IconProps> = ({
       height={`${height || "35"}`}
       viewBox="0 0 128 128"
     >
-      <g fill={`${fill || "#181616"}`}>
+      <g fill={`${fill || "currentColor"}`}>
         <path
           fillRule="evenodd"
           clipRule="evenodd"

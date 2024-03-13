@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="max-w-[950px] mx-auto px-3 pb-7 text-gray400"
+      className="max-w-[950px] mx-auto px-3 pb-7 text-shadow dark:text-dark-shadow"
     >
       <div className="flex gap-2 items-center justify-center">
         <p className="text-sm sm:text-base flex items-center justify-center">
@@ -19,7 +19,7 @@ const Footer = () => {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="hover:text-secondary"
+                className="hover:text-secondary dark:hover:text-dark-secondary"
               >
                 <Icon />
               </a>

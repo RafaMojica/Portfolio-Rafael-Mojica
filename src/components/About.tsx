@@ -30,7 +30,7 @@ const About = () => {
           >
             <div className="flex items-center justify-center py-2">
               <div
-                className={`flex rounded-full shadow-lg shadow-gray400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}
+                className={`flex rounded-full shadow-lg shadow-shadow p-6 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain`}
               >
                 <BsFillFileEarmarkSpreadsheetFill size={20} />
                 <p className="font-bold px-2">CV</p>
@@ -41,7 +41,7 @@ const About = () => {
         <div
           className="flex h-full items-center w-[80%] mx-auto md:w-full"
         >
-          <div className="mt-12 md:m-0 rounded-3xl bg-gradient-to-r from-terciario to-gray400">
+          <div className="mt-12 md:m-0 rounded-3xl bg-gradient-to-r from-terciario to-shadow">
             <div className="rounded-3xl rotate-12 duration-300 hover:rotate-0 overflow-hidden">
               <Image
                 className="rounded-3xl"

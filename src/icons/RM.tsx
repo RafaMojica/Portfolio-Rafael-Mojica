@@ -1,7 +1,7 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const RM: FC<IconProps> = ({ width, height, fill, className }) => {
+export const RM: FC<IconProps> = ({ width, height, className }) => {
   return (
     <svg
       className={`${className || ""}`}
@@ -14,7 +14,6 @@ export const RM: FC<IconProps> = ({ width, height, fill, className }) => {
     >
       <g
         transform="translate(0.000000,498.000000) scale(0.100000,-0.100000)"
-        fill={`${fill || "#000000"}`}
         stroke="none"
       >
         <path

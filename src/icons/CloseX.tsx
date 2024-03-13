@@ -13,11 +13,10 @@ export const CloseX: FC<IconProps> = ({
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={`${className || ""}`}
-      width={`${width || "24"}`}
-      height={`${height || "24"}`}
+      width={`${width || "30"}`}
+      height={`${height || "30"}`}
       viewBox="0 0 24 24"
       strokeWidth={`${strokeWidth || "1.75"}`}
-      stroke={`${stroke || "currentColor"}`}
       fill={`${fill || "none"}`}
       strokeLinecap="round"
       strokeLinejoin="round"

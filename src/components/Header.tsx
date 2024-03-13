@@ -1,51 +1,81 @@
 "use client";
 
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useScroll from "@/hook/useScroll";
 import IconButton from "@/common/IconButton";
 import { SOCIAL_NETWORKS_INTRODUCTION } from "@/data/socialNetworks";
 import { RM } from "@/icons/RM";
 import { Menu } from "@/icons/Menu";
 import { CloseX } from "@/icons/CloseX";
+import { Sun } from "@/icons/Sun";
+import { Moon } from "@/icons/Moon";
 
 const Navbar = () => {
   const scroll = useScroll(90);
   const [nav, setNav] = useState(false);
+  const [theme, setTheme] = useState("light");
 
-  const handleNav = () => {
-    setNav(!nav);
-  };
+  useEffect(() => {
+    theme === "dark"
+      ? document.documentElement.classList.add("dark")
+      : document.documentElement.classList.remove("dark");
+  }, [theme]);
 
   return (
     <header
       className={
         !scroll
-          ? "fixed w-full h-20 shadow-xl shadow-secondary/20  z-[100] bg-background"
+          ? "fixed w-full h-20 shadow-xl shadow-secondary/20  z-[100] bg-background dark:bg-dark-background dark:shadow-dark-secondary/20"
           : "fixed w-full h-20 z-[100] "
       }
     >
       <section className="flex justify-between items-center w-full h-full px-2 lg:px-16">
         <Link href="/">
-          <RM />
+          <RM className="fill-primary dark:fill-dark-primary" />
         </Link>
-        <nav>
-          <ul className="hidden md:flex font-semibold gap-10">
-            <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
+        <nav className="flex gap-2 md:gap-7">
+          <ul className="hidden md:flex gap-8 justify-center items-center">
+            <li
+              className="relative text-primary before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary 
+              dark:before:bg-dark-secondary dark:hover:text-dark-secondary dark:text-dark-primary"
+            >
               <Link href="/">Inicio</Link>
             </li>
-            <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
+            <li
+              className="relative text-primary before:block before:h-[2px] before:bg-secondary  before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary 
+              dark:before:bg-dark-secondary dark:hover:text-dark-secondary dark:text-dark-primary"
+            >
               <Link href="/#about">Sobre mí</Link>
             </li>
-            <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
+            <li
+              className="relative text-primary before:block before:h-[2px] before:bg-secondary  before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary 
+              dark:before:bg-dark-secondary dark:hover:text-dark-secondary dark:text-dark-primary"
+            >
               <Link href="/#projects">Proyectos</Link>
             </li>
-            <li className="relative before:block before:h-[2px] before:bg-secondary before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary">
+            <li
+              className="relative text-primary before:block before:h-[2px] before:bg-secondary  before:absolute before:w-full before:-bottom-1 before:origin-bottom-right before:transition before:duration-300 before:scale-x-0 before:ease-in-out hover:before:origin-bottom-left hover:before:scale-x-100 hover:text-secondary 
+              dark:before:bg-dark-secondary dark:hover:text-dark-secondary dark:text-dark-primary"
+            >
               <Link href="/#skills">Habilidades</Link>
             </li>
           </ul>
-          <div className="md:hidden" onClick={handleNav}>
-            <Menu width="30" height="30" />
+          <button
+            onClick={() => {
+              setTheme((prevTheme) =>
+                prevTheme === "light" ? "dark" : "light"
+              );
+            }}
+          >
+            {theme === "light" ? (
+              <Moon className="stroke-gray-400 fill-gray-400" />
+            ) : (
+              <Sun className="stroke-yellow-400 fill-yellow-400" />
+            )}
+          </button>
+          <div className="md:hidden" onClick={() => setNav(!nav)}>
+            <Menu className="stroke-primary dark:stroke-dark-primary" />
           </div>
         </nav>
       </section>
@@ -60,41 +90,41 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-7 bg-background ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-7 bg-background dark:bg-dark-background ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <RM />
+              <RM className="fill-primary dark:fill-dark-primary" />
             </Link>
-            <div className="cursor-pointer" onClick={handleNav}>
-              <CloseX width="30" height="30" />
+            <div className="cursor-pointer" onClick={() => setNav(!nav)}>
+              <CloseX className="stroke-primary dark:stroke-dark-primary" />
             </div>
           </div>
-          <div className="border-b border-secondary mt-5">
+          <div className="text-primary dark:text-dark-primary border-b border-secondary dark:border-dark-secondary mt-5">
             <p className="w-[85%] md:w-[98%] py-2 text-sm">
               Construyamos algo juntos
             </p>
           </div>
           <nav className="flex flex-col mt-9">
             <ul className="flex flex-col text-sm uppercase gap-6">
-              <li>
+              <li className="text-primary dark:text-dark-primary">
                 <Link onClick={() => setNav(false)} href="/">
                   Inicio
                 </Link>
               </li>
-              <li>
+              <li className="text-primary dark:text-dark-primary">
                 <Link onClick={() => setNav(false)} href="/#about">
                   Sobre Mí
                 </Link>
               </li>
-              <li>
+              <li className="text-primary dark:text-dark-primary">
                 <Link onClick={() => setNav(false)} href="/#projects">
                   Proyectos
                 </Link>
               </li>
-              <li>
+              <li className="text-primary dark:text-dark-primary">
                 <Link onClick={() => setNav(false)} href="/#skills">
                   Habilidades
                 </Link>

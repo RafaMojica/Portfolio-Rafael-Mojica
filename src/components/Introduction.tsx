@@ -15,14 +15,20 @@ const Introduction = () => {
     <Layout id="introduction" className="h-screen">
       <div className="relative h-screen flex justify-center items-center text-center">
         <header className="flex flex-col gap-6">
-          <p className="uppercase text-sm sm:text-base tracking-widest text-primary">
+          <p className="uppercase text-sm sm:text-base tracking-widest text-description dark:text-dark-description">
             Construyamos algo juntos
           </p>
-          <h1 className="font-bold">
-            Hola, soy <span className="text-secondary">Rafael Mojica</span>
-            <span className="pt-5 block">Full-Stack Web Developer</span>
+          <h1 className="font-bold text-primary dark:text-dark-primary">
+            Hola, soy
+            <span className="text-secondary dark:text-dark-secondary">
+              {" "}
+              Rafael Mojica
+            </span>
+            <span className="pt-5 block text-primary dark:text-dark-primary">
+              Full-Stack Web Developer
+            </span>
           </h1>
-          <p className="text-primary sm:max-w-[70%] m-auto text-sm sm:text-lg">
+          <p className="text-description sm:max-w-[70%] m-auto text-sm sm:text-lg dark:text-dark-description">
             A través de este espacio, espero poder compartir contigo mi pasión,
             experiencia y conocimientos en el mundo IT.
           </p>
@@ -32,7 +38,7 @@ const Introduction = () => {
                 <IconButton
                   key={`${name}`}
                   href={`${href}`}
-                  className="hover:text-background"
+                  className="hover:text-background dark:hover:text-dark-background"
                 >
                   <Icon />
                 </IconButton>
@@ -50,7 +56,7 @@ const Introduction = () => {
               width="60"
               height="60"
               strokeWidth="1"
-              className="animate-bounce text-secondary"
+              className="animate-bounce text-secondary dark:text-dark-secondary"
             />
           </Link>
         </footer>
