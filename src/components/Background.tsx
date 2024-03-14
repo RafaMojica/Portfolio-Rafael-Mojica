@@ -9,7 +9,7 @@ const Background = () => {
         <div
           className="fixed inset-0 -z-30 h-full w-full bg-[size:6rem_4rem] md:opacity-60
           bg-[linear-gradient(to_right,#f0f0f0,transparent_1px),linear-gradient(to_bottom,#f0f0f0,transparent_1px)] 
-          dark:bg-[linear-gradient(to_right,#274C89,transparent_1px),linear-gradient(to_bottom,#274C89,transparent_1px)] md:dark:opacity-30"
+          dark:bg-[linear-gradient(to_right,#274C89,transparent_1px),linear-gradient(to_bottom,#274C89,transparent_1px)] md:dark:opacity-20"
         ></div>
       </div>
     </>
