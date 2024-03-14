@@ -13,14 +13,14 @@ const config: Config = {
         primary: "#000000",
         secondary: "#5651e5",
         description: "#4B5563",
-        shadow: "#9ca3af",
+        button: "#B6CDFA",
         hover: "#ecf0f3",
 
         dark: {
           primary: "#ffffff",
           secondary: "#5651e5",
           description: "#ecf0f3",
-          shadow: "#001552",
+          button: "#0B1940",
         },
       },
     },

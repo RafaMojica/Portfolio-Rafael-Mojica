@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="max-w-[950px] mx-auto px-3 pb-7 text-shadow"
+      className="max-w-[950px] mx-auto px-3 pb-7 text-description dark:text-dark-description"
     >
       <div className="flex gap-2 items-center justify-center">
         <p className="text-sm sm:text-base flex items-center justify-center">
