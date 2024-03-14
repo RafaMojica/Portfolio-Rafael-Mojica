@@ -26,7 +26,7 @@ const Navbar = () => {
     <header
       className={
         !scroll
-          ? "fixed w-full h-20 shadow-xl shadow-secondary/20  z-[100] bg-background dark:bg-dark-background dark:shadow-dark-secondary/20"
+          ? "fixed w-full h-20 shadow-xl backdrop-blur-xl shadow-secondary/20 z-[100] dark:shadow-dark-secondary/20"
           : "fixed w-full h-20 z-[100] "
       }
     >
@@ -90,7 +90,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-7 bg-background dark:bg-dark-background ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen p-7 bg-gradient-to-b from-slate-50 from-70% to-blue-200 dark:bg-gradient-to-b dark:from-gray-950 dark:from-70% dark:to-blue-950 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
