@@ -37,7 +37,7 @@ const Introduction = () => {
                 <IconButton
                   key={`${name}`}
                   href={`${href}`}
-                  className="hover:text-background dark:hover:text-dark-background"
+                  className="hover:text-hover"
                 >
                   <Icon />
                 </IconButton>

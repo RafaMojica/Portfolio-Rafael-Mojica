@@ -10,18 +10,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#ecf0f3",
         primary: "#000000",
         secondary: "#5651e5",
         description: "#4B5563",
         shadow: "#9ca3af",
+        hover: "#ecf0f3",
 
         dark: {
-          background: "#000000",
           primary: "#ffffff",
           secondary: "#5651e5",
           description: "#ecf0f3",
-          shadow: "#9ca3af",
+          shadow: "#ecf0f3",
         },
       },
     },
