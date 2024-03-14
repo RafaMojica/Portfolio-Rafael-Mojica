@@ -12,7 +12,7 @@ const config: Config = {
       colors: {
         primary: "#000000",
         secondary: "#5651e5",
-        description: "#4B5563",
+        description: "#191919",
         button: "#B6CDFA",
         hover: "#ecf0f3",
 
