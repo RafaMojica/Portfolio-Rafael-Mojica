@@ -14,12 +14,11 @@ const Introduction = () => {
   return (
     <Layout id="introduction" className="h-screen">
       <div className="relative h-screen flex justify-center items-center text-center">
-        <header className="flex flex-col gap-6">
+        <header className="flex flex-col gap-6 col-span-2">
           <p className="uppercase text-sm sm:text-base tracking-widest text-description dark:text-dark-description">
             Construyamos algo juntos
           </p>
           <h1 className="font-bold text-primary dark:text-dark-primary">
-            Hola, soy
             <span className="text-secondary dark:text-dark-secondary">
               {" "}
               Rafael Mojica
