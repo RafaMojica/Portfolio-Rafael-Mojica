@@ -20,7 +20,7 @@ const config: Config = {
           primary: "#ffffff",
           secondary: "#5651e5",
           description: "#ecf0f3",
-          shadow: "#ecf0f3",
+          shadow: "#001552",
         },
       },
     },

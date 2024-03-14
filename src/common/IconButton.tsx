@@ -15,8 +15,8 @@ const IconButton: FC<IconButtonProps> = ({ children, href, className }) => {
       rel={href.startsWith("http") ? "noreferrer" : undefined}
     >
       <li
-        className={`text-primary rounded-full p-4 md:p-5 cursor-pointer shadow-lg dark:shadow-sm shadow-shadow hover:scale-110 hover:bg-secondary ease-in duration-300
-         dark:hover:bg-dark-secondary dark:shadow-dark-shadow dark:text-dark-primary ${
+        className={`text-primary rounded-full p-4 md:p-5 cursor-pointer shadow-lg shadow-shadow hover:scale-110 hover:bg-secondary ease-in duration-300
+         dark:hover:bg-dark-secondary dark:shadow-dark-shadow  dark:text-dark-primary ${
            className || ""
          }`}
       >
