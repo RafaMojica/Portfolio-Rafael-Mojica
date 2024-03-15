@@ -14,7 +14,7 @@ import { Moon } from "@/icons/Moon";
 const Navbar = () => {
   const scroll = useScroll(90);
   const [nav, setNav] = useState(false);
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     theme === "dark"
