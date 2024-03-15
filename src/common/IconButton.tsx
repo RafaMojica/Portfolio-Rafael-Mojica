@@ -16,7 +16,7 @@ const IconButton: FC<IconButtonProps> = ({ children, href, className }) => {
     >
       <li
         className={`text-primary rounded-full p-4 md:p-5 cursor-pointer  hover:scale-110 hover:bg-secondary ease-in duration-300
-         dark:hover:bg-dark-secondary bg-button/50 dark:bg-dark-button/50 dark:text-dark-primary ${
+         dark:hover:bg-dark-secondary shadow-lg shadow-shadow dark:shadow-dark-shadow dark:bg-dark-button/50 dark:text-dark-primary ${
            className || ""
          }`}
       >
