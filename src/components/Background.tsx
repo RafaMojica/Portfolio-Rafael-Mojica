@@ -15,11 +15,6 @@ const Background = () => {
           className="absolute left-0 right-[1150px] top-[400px] -z-30 m-auto h-[510px] w-[510px] rounded-full bg-background-circleDownBg
          dark:bg-dark-background-bg md:dark:bg-dark-background-circleDownBg opacity-20 dark:opacity-30 blur-[110px]"
         ></div>
-        <div
-          className="fixed inset-0 -z-30 h-full w-full bg-[size:6rem_4rem]
-            bg-[linear-gradient(to_right,#f0f0f0,transparent_1px),linear-gradient(to_bottom,#f0f0f0,transparent_1px)] 
-            dark:bg-[linear-gradient(to_right,#274C89,transparent_1px),linear-gradient(to_bottom,#274C89,transparent_1px)] dark:opacity-20 md:dark:opacity-30"
-        ></div>
       </div>
     </>
   );
