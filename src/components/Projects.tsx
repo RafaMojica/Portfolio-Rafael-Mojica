@@ -6,10 +6,10 @@ import { PROJECTS } from "@/data/project";
 const Projects = () => {
   return (
     <Layout id="projects">
-      <h2 className="text-center text-secondary dark:text-dark-secondary font-bold">
+      <h2 className="text-center text-secondary dark:text-dark-secondary font-bold pb-20">
         Proyectos
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 place-items-center">
+      <div className="flex flex-col gap-5">
         {PROJECTS.map((project) => {
           return <Project key={project.name} {...project} />;
         })}
