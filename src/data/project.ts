@@ -1,18 +1,15 @@
 import { Project } from "@/types/project.types";
 import { TECHNOLOGIES } from "./technologies";
-import mockUp from "../../public/MockUpPrueba.png";
-import mockUp2 from "../../public/MockUpPrueba2.png";
-import mockMobil from "../../public/MackUpMovil.png";
+import TestImage from "../../public/BetaImage.png";
 
 export const PROJECTS: Project[] = [
   {
     name: "Fast Delivery",
-    type: "Aplicación Web",
     web: "",
     demo: "",
-    image: [mockUp],
+    image: [TestImage],
     description:
-      "Aplicación que ofrece el servicio de mensajeria de un establecimiento de repartos.",
+      "Aplicación web para una empresa de logística que cuenta con una interfaz intuitiva y eficiente. Esta aplicación, con dos roles diferenciados, garantiza un seguimiento preciso y una gestión óptima de la entrega de paquetes en tiempo real.",
     technologies: [
       TECHNOLOGIES.Next,
       TECHNOLOGIES.React,
@@ -35,12 +32,11 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "GlobalNews Group",
-    type: "Aplicación Móvil",
     web: "",
     demo: "",
-    image: [mockUp2],
+    image: [TestImage],
     description:
-      "Aplicación con el fin de automatizar procesos en el departamento de recursos humanos.",
+      "Aplicación móvil diseñada específicamente para optimizar los procesos en el departamento de recursos humanos, con un enfoque claro en mejorar la eficiencia y la comodidad. Al automatizar tareas clave dentro del departamento.",
     technologies: [
       TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
@@ -56,12 +52,11 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Watch Me",
-    type: "Sitio Web",
     web: "",
     demo: "",
-    image: [mockMobil],
+    image: [TestImage],
     description:
-      "Sitio web que brinda un gran catálogo de películas y series de televisión.",
+      "Sitio web de películas donde los usuarios pueden explorar, buscar y disfrutar de un amplio catálogo de películas y series. Además, cuentan con la capacidad de registrarse lo que les proporciona una experiencia personalizada.",
     technologies: [
       TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
@@ -79,11 +74,11 @@ export const PROJECTS: Project[] = [
   },
   {
     name: "Como en Casa",
-    type: "Sitio Web",
     web: "",
     demo: "",
-    image: [mockMobil],
-    description: "Sitio web E-commerce con temática de restaurante",
+    image: [TestImage],
+    description:
+      "Sitio web e-commerce funcional con temática de restaurante, con dos roles, donde el administrador tiene el control total sobre los productos y pedidos y los clientes pueden explorar el menú para realizar su pedido en línea.",
     technologies: [
       TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
