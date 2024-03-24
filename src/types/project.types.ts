@@ -9,7 +9,6 @@ interface Repository {
 
 export interface Project {
   name: string;
-  type: string;
   web: string;
   demo: string;
   image: StaticImageData[];
