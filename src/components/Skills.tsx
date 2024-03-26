@@ -10,7 +10,7 @@ const Skills = () => {
         Habilidades
       </h2>
       <div className="max-w-5xl m-auto">
-        <ul className="flex flex-wrap justify-center items-center gap-5">
+        <div className="flex flex-wrap justify-center items-center gap-5">
           {STACK.map(({ name, href, Icon }) => {
             return (
               <IconButton key={name} href={href}>
@@ -18,7 +18,7 @@ const Skills = () => {
               </IconButton>
             );
           })}
-        </ul>
+        </div>
       </div>
     </Layout>
   );

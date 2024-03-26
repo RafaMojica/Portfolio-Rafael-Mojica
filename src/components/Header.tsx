@@ -102,7 +102,7 @@ const Navbar = () => {
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <RM className="fill-primary dark:fill-dark-primary" />
+              <RM className="fill-primary dark:fill-dark-primary" area-label="RM" />
             </Link>
             <div className="cursor-pointer" onClick={() => setNav(!nav)}>
               <CloseX className="stroke-primary dark:stroke-dark-primary" />
