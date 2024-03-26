@@ -31,7 +31,7 @@ const Introduction = () => {
             A través de este espacio, espero poder compartir contigo mi pasión,
             experiencia y conocimientos en el mundo IT.
           </p>
-          <ul className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto py-2">
+          <div className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto py-2">
             {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
               return (
                 <IconButton
@@ -43,7 +43,7 @@ const Introduction = () => {
                 </IconButton>
               );
             })}
-          </ul>
+          </div>
         </header>
         <footer
           className={

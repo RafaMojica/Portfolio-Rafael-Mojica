@@ -69,9 +69,15 @@ const Navbar = () => {
             }}
           >
             {theme === "light" ? (
-              <Moon className="stroke-gray-400 fill-gray-400" />
+              <Moon
+                className="stroke-gray-400 fill-gray-400"
+                aria-label="Moon"
+              />
             ) : (
-              <Sun className="stroke-yellow-400 fill-yellow-400" />
+              <Sun
+                className="stroke-yellow-400 fill-yellow-400"
+                aria-label="Sun"
+              />
             )}
           </button>
           <div className="md:hidden" onClick={() => setNav(!nav)}>
@@ -131,7 +137,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="mt-4">
-              <ul className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
+              <div className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
                 {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
                   return (
                     <IconButton key={`${name}`} href={`${href}`}>
@@ -139,7 +145,7 @@ const Navbar = () => {
                     </IconButton>
                   );
                 })}
-              </ul>
+              </div>
             </div>
           </nav>
         </div>
