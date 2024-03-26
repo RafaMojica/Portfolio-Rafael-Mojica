@@ -13,7 +13,6 @@ const IconButton: FC<IconButtonProps> = ({ children, href, className }) => {
       href={href}
       target={href.startsWith("http") ? "_blank" : undefined}
       rel={href.startsWith("http") ? "noreferrer" : undefined}
-      area-label="Link to go to a new page"
     >
       <div
         className={`text-primary rounded-full p-4 md:p-5 cursor-pointer  hover:scale-110 hover:bg-secondary ease-in duration-300
