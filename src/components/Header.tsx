@@ -31,7 +31,7 @@ const Navbar = () => {
       }
     >
       <section className="flex justify-between items-center w-full h-full px-2 lg:px-16">
-        <Link href="/">
+        <Link href="/" aria-label="RM logo to go to the beginning">
           <RM className="fill-primary dark:fill-dark-primary" />
         </Link>
         <nav className="flex gap-2 md:gap-7">
@@ -62,6 +62,7 @@ const Navbar = () => {
             </li>
           </ul>
           <button
+            aria-label="light and dark"
             onClick={() => {
               setTheme((prevTheme) =>
                 prevTheme === "light" ? "dark" : "light"
@@ -69,20 +70,18 @@ const Navbar = () => {
             }}
           >
             {theme === "light" ? (
-              <Moon
-                className="stroke-gray-400 fill-gray-400"
-                aria-label="Moon"
-              />
+              <Moon className="stroke-gray-400 fill-gray-400" />
             ) : (
-              <Sun
-                className="stroke-yellow-400 fill-yellow-400"
-                aria-label="Sun"
-              />
+              <Sun className="stroke-yellow-400 fill-yellow-400" />
             )}
           </button>
-          <div className="md:hidden" onClick={() => setNav(!nav)}>
+          <button
+            className="md:hidden"
+            onClick={() => setNav(!nav)}
+            aria-label="Menu"
+          >
             <Menu className="stroke-primary dark:stroke-dark-primary" />
-          </div>
+          </button>
         </nav>
       </section>
 
@@ -102,11 +101,15 @@ const Navbar = () => {
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <RM className="fill-primary dark:fill-dark-primary" area-label="RM" />
+              <RM className="fill-primary dark:fill-dark-primary" />
             </Link>
-            <div className="cursor-pointer" onClick={() => setNav(!nav)}>
+            <button
+              className="cursor-pointer"
+              onClick={() => setNav(!nav)}
+              aria-label="Close"
+            >
               <CloseX className="stroke-primary dark:stroke-dark-primary" />
-            </div>
+            </button>
           </div>
           <div className="text-primary dark:text-dark-primary border-b border-secondary dark:border-dark-secondary mt-5">
             <p className="w-[85%] md:w-[98%] py-2 text-sm">
