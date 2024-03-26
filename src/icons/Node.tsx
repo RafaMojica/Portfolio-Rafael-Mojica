@@ -4,8 +4,9 @@ import { FC } from "react";
 export const Node: FC<IconProps> = ({ width, height, className }) => {
   return (
     <svg
-      width="35px"
-      height="35px"
+      className={`${className || ""}`}
+      width={`${width || "35"}`}
+      height={`${height || "35"}`}
       viewBox="-13 0 282 282"
       xmlns="http://www.w3.org/2000/svg"
       preserveAspectRatio="xMinYMin meet"
