@@ -22,9 +22,11 @@ const Project: FC<Project> = ({
         <div className="w-full flex flex-col justify-center items-center text-description dark:text-dark-description">
           <div className="flex justify-center items-center gap-2 text-secondary text-2xl font-bold">
             <h3>{name}</h3>
-            <Link href={web} target="_blank" rel="noreferrer">
-              <ExternalLink className="hover:stroke-secondary dark:hover:stroke-dark-secondary" />
-            </Link>
+            {web && (
+              <Link href={web} target="_blank" rel="noreferrer">
+                <ExternalLink className="hover:stroke-secondary dark:hover:stroke-dark-secondary" />
+              </Link>
+            )}
           </div>
           <p className="py-8 leading-relaxed">{description}</p>
           <div className="flex flex-wrap gap-2">
