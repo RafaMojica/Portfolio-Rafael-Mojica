@@ -26,8 +26,8 @@ const Navbar = () => {
     <header
       className={
         !scroll
-          ? "fixed w-full h-20 shadow-xl backdrop-blur-xl shadow-secondary/20 z-[100] dark:shadow-dark-secondary/20"
-          : "fixed w-full h-20 z-[100] "
+          ? "fixed w-full h-16 shadow-xl backdrop-blur-xl shadow-secondary/20 z-[100] dark:shadow-dark-secondary/20"
+          : "fixed w-full h-16 z-[100] "
       }
     >
       <section className="flex justify-between items-center w-full h-full px-2 lg:px-16">
