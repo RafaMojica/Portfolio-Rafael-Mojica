@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { Project } from "@/types/project.types";
 import { ExternalLink } from "@/icons/ExternalLink";
 import Link from "next/link";
+import Tag from "./Tag";
 
 const Project: FC<Project> = ({
   name,
@@ -27,15 +28,8 @@ const Project: FC<Project> = ({
           </div>
           <p className="py-8 leading-relaxed">{description}</p>
           <div className="flex flex-wrap gap-2">
-            {technologies.map(({ name, color }) => {
-              return (
-                <span
-                  key={name}
-                  className="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300"
-                >
-                  {name}
-                </span>
-              );
+            {technologies.map(({ name, color, Icon }) => {
+              return <Tag key={name} name={name} color={color} Icon={Icon} />;
             })}
           </div>
         </div>
