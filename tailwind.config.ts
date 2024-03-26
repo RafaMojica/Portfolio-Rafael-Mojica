@@ -19,6 +19,8 @@ const config: Config = {
         secondary: "#5651e5",
         description: "#191919",
         shadow: "#9CA3AF",
+        tag: "#5651e5",
+
         hover: "#ecf0f3",
 
         dark: {
@@ -32,6 +34,7 @@ const config: Config = {
           description: "#ecf0f3",
           button: "#0B1940",
           shadow: "#030712",
+          tag: "#06B6D4",
         },
       },
     },
