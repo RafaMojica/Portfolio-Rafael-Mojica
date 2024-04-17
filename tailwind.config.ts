@@ -23,6 +23,13 @@ const config: Config = {
 
         hover: "#ecf0f3",
 
+        dBg: "#000000",
+        dGradientPrimary: "#2275EE",
+        dGradientSecondary: "#EB00FF",
+        dPrimary: "#AFAEAE",
+        dSecondary: "#FFFFFF",
+        dEmphasis: "#2275EE",
+
         dark: {
           background: {
             bg: "#030712",
