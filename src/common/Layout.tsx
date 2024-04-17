@@ -10,7 +10,7 @@ const Layout: FC<LayoutProps> = ({ id, children, className }) => {
   return (
     <section
       id={id}
-      className={`max-w-6xl mx-auto px-3
+      className={`max-w-6xl mx-auto px-3 md:px-0
       ${className || ""}`}
     >
       {children}
