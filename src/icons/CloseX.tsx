@@ -1,29 +1,21 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const CloseX: FC<IconProps> = ({
-  width,
-  height,
-  strokeWidth,
-  stroke,
-  fill,
-  className,
-}) => {
+export const CloseX: FC<IconProps> = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className={`${className || ""}`}
-      width={`${width || "30"}`}
-      height={`${height || "30"}`}
-      viewBox="0 0 24 24"
-      strokeWidth={`${strokeWidth || "1.75"}`}
-      fill={`${fill || "none"}`}
+      width="30"
+      height="30"
+      fill="none"
+      stroke="#fff"
       strokeLinecap="round"
       strokeLinejoin="round"
+      strokeWidth="1.5"
+      viewBox="0 0 24 24"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M18 6l-12 12" />
-      <path d="M6 6l12 12" />
+      <path stroke="none" d="M0 0h24v24H0z" />
+      <path d="M18 6 6 18M6 6l12 12" />
     </svg>
   );
 };
