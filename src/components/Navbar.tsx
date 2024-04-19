@@ -34,10 +34,7 @@ const Navbar = () => {
           : "fixed w-full h-16 z-[100]"
       }
     >
-      <Layout
-        id="navbarDesktop"
-        className="h-full flex justify-between items-center"
-      >
+      <Layout id="navbar" className="h-full flex justify-between items-center">
         <div className="flex h-full justify-start items-center lg:basis-40">
           <Link href="/" aria-label="Logo portafolio web">
             <RM className="text-white" />
