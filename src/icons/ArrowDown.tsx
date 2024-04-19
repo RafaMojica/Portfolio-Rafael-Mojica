@@ -11,7 +11,7 @@ export const ArrowDown: FC<IconProps> = ({ className }) => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1_31)">
+      <g clipPath="url(#clip0_1_31)">
         <path
           d="M42.5 32.5V17.5L30 27.5L17.5 17.5V32.5L30 42.5L42.5 32.5Z"
           stroke="url(#paint0_linear_1_31)"
