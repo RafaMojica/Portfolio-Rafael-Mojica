@@ -18,7 +18,7 @@ const Introduction = () => {
     >
       <header className="mt-16 h-[calc(100vh-50px-64px)] flex items-center justify-center">
         <div className="flex flex-col gap-6 text-center">
-          <p className="uppercase text-sm sm:text-base tracking-widest text-dPrimary">
+          <p className="uppercase text-xs sm:text-base tracking-widest text-dPrimary">
             Construyamos algo juntos
           </p>
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold ">
