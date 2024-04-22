@@ -63,10 +63,3 @@ const Introduction = () => {
 };
 
 export default Introduction;
-
-{
-  /* <div
-className={`
-   dark:hover:bg-dark-secondary shadow-lg shadow-shadow dark:shadow-dark-shadow dark:bg-dark-button/50 dark:text-dark-primary`}
-> */
-}
