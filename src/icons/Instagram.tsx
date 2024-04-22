@@ -1,31 +1,31 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const Instagram: FC<IconProps> = ({
-  width,
-  height,
-  strokeWidth,
-  stroke,
-  fill,
-  className,
-}) => {
+export const Instagram: FC<IconProps> = ({ className }) => {
   return (
     <svg
       className={`${className || ""}`}
       xmlns="http://www.w3.org/2000/svg"
-      width={`${width || "30"}`}
-      height={`${height || "30"}`}
-      viewBox="0 0 24 24"
-      strokeWidth={`${strokeWidth || "1.5"}`}
-      stroke={`${stroke || "currentColor"}`}
-      fill={`${fill || "none"}`}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      width="25"
+      height="25"
+      fill="none"
+      viewBox="0 0 30 30"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
-      <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
-      <path d="M16.5 7.5l0 .01" />
+      <g
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="2"
+        clipPath="url(#a)"
+      >
+        <path d="M5 10a5 5 0 0 1 5-5h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H10a5 5 0 0 1-5-5V10Z" />
+        <path d="M11.25 15a3.75 3.75 0 1 0 7.5 0 3.75 3.75 0 0 0-7.5 0ZM20.625 9.375v.012" />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="currentColor" d="M0 0h30v30H0z" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

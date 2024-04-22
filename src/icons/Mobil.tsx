@@ -1,29 +1,30 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const Mobil: FC<IconProps> = ({
-  width,
-  height,
-  strokeWidth,
-  stroke,
-  fill,
-  className,
-}) => {
+export const Mobil: FC<IconProps> = ({ className }) => {
   return (
     <svg
       className={`${className || ""}`}
       xmlns="http://www.w3.org/2000/svg"
-      width={`${width || "30"}`}
-      height={`${height || "30"}`}
-      viewBox="0 0 24 24"
-      strokeWidth={`${strokeWidth || "1.5"}`}
-      stroke={`${stroke || "currentColor"}`}
-      fill={`${fill || "none"}`}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      width="25"
+      height="25"
+      fill="none"
+      viewBox="0 0 30 30"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+      <g clip-path="url(#a)">
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6.25 5h5l2.5 6.25-3.125 1.875a13.75 13.75 0 0 0 6.25 6.25l1.875-3.125 6.25 2.5v5a2.5 2.5 0 0 1-2.5 2.5A20 20 0 0 1 3.75 7.5 2.5 2.5 0 0 1 6.25 5Z"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="currentColor" d="M0 0h30v30H0z" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };

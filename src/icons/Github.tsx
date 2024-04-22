@@ -1,34 +1,30 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const Github: FC<IconProps> = ({
-  width,
-  height,
-  strokeWidth,
-  stroke,
-  fill,
-  className,
-}) => {
+export const Github: FC<IconProps> = ({ className }) => {
   return (
     <svg
       className={`${className || ""}`}
       xmlns="http://www.w3.org/2000/svg"
-      width={`${width || "30"}`}
-      height={`${height || "30"}`}
-      viewBox="0 0 24 24"
-      strokeWidth={`${strokeWidth || "1.5"}`}
-      stroke={`${stroke || "currentColor"}`}
-      fill={`${fill || "none"}`}
-      strokeLinecap="round"
-      strokeLinejoin="round"
+      width="25"
+      height="25"
+      fill="none"
+      viewBox="0 0 30 30"
     >
-      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-      <path
-        d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 
-          -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 
-          -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 
-          -.6 1.2 -.5 2v3.5"
-      />
+      <g clip-path="url(#a)">
+        <path
+          stroke="currentColor"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M11.25 23.75C5.875 25.5 5.875 20.625 3.75 20m15 6.25v-4.375c0-1.25.125-1.75-.625-2.5 3.5-.375 6.875-1.75 6.875-7.5a5.75 5.75 0 0 0-1.625-4 5.25 5.25 0 0 0-.125-4S21.875 3.5 18.875 5.5a15.375 15.375 0 0 0-7.75 0c-3-2-4.375-1.625-4.375-1.625a5.25 5.25 0 0 0-.125 4 5.75 5.75 0 0 0-1.625 4c0 5.75 3.375 7.125 6.875 7.5-.75.75-.75 1.5-.625 2.5v4.375"
+        />
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="currentColor" d="M0 0h30v30H0z" />
+        </clipPath>
+      </defs>
     </svg>
   );
 };
