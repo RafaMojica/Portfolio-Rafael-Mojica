@@ -1,5 +1,5 @@
-import { SOCIAL_NETWORKS_FOOTER } from "@/data/socialNetworks";
 import React from "react";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
           2024 • Rafael Mojica •
         </p>
         <div className="flex gap-2">
-          {SOCIAL_NETWORKS_FOOTER.map(({ name, href, Icon }) => {
+          {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
             return (
               <a
                 key={name}
