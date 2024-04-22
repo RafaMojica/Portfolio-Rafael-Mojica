@@ -12,7 +12,7 @@ import { Sun } from "@/icons/Sun";
 import { Moon } from "@/icons/Moon";
 import { FlagCol } from "@/icons/FlagCol";
 import { FlagUsa } from "@/icons/FlagUsa";
-import { SOCIAL_NETWORKS_INTRODUCTION } from "@/data/socialNetworks";
+import { CONTACTS, SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
 
 const Navbar = () => {
   const scroll = useScroll(90);
@@ -34,7 +34,10 @@ const Navbar = () => {
           : "fixed w-full h-16 z-[100]"
       }
     >
-      <Layout id="navbar" className="h-full flex justify-between items-center">
+      <Layout
+        id="navbarDesktop"
+        className="h-full flex justify-between items-center"
+      >
         <div className="flex h-full justify-start items-center lg:basis-40">
           <Link href="/" aria-label="Logo portafolio web">
             <RM className="text-white" />
@@ -82,10 +85,11 @@ const Navbar = () => {
         </nav>
         <div className="hidden md:flex h-full justify-end items-center lg:basis-40">
           <Link
-            href="https://drive.google.com/file/d/1Pe-UKjdPGVZC53y1DmgpNwx3PUDryUd4/view"
+            href={`${CONTACTS.cv.href}`}
             target="_blank"
-            className="px-7 py-3 rounded-full font-medium text-dSecondary
-          bg-gradient-to-b from-dGradientPrimary/70 to-dGradientSecondary/70
+            rel="noreferrer"
+            className="px-7 py-3 rounded-full font-medium text-dSecondary hover:text-dBg duration-300 ease-in-out
+          bg-gradient-to-b from-dGradientPrimary/80 to-dGradientSecondary/80
           hover:from-dGradientPrimary hover:to-dGradientSecondary"
           >
             Descargar CV
@@ -95,7 +99,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
 
-      <section
+      <Layout
+        id="navbarMobile"
         className={
           nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
         }
@@ -149,17 +154,25 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
-              {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
+              {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
                 return (
-                  <IconButton key={`${name}`} href={`${href}`}>
-                    <Icon width="24" height="24" />
-                  </IconButton>
+                  <Link
+                    key={name}
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
+                  >
+                    <div className="bg-dBg p-4 text-white hover:text-black rounded-full hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                  </Link>
                 );
               })}
             </div>
           </nav>
         </div>
-      </section>
+      </Layout>
     </header>
   );
 };

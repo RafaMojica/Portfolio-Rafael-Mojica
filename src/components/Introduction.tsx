@@ -1,12 +1,11 @@
 "use client";
 
 import React from "react";
-import { ArrowDown } from "@/icons/ArrowDown";
 import Link from "next/link";
-import useScroll from "@/hook/useScroll";
 import Layout from "@/common/Layout";
-import IconButton from "@/common/IconButton";
-import { SOCIAL_NETWORKS_INTRODUCTION } from "@/data/socialNetworks";
+import useScroll from "@/hook/useScroll";
+import { ArrowDown } from "@/icons/ArrowDown";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
 
 const Introduction = () => {
   const scroll = useScroll(90);
@@ -36,15 +35,19 @@ const Introduction = () => {
             experiencia y conocimientos en el mundo IT.
           </p>
           <div className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto">
-            {SOCIAL_NETWORKS_INTRODUCTION.map(({ name, href, Icon }) => {
+            {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
               return (
-                <IconButton
-                  key={`${name}`}
-                  href={`${href}`}
-                  className="hover:text-hover"
+                <Link
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
                 >
-                  <Icon />
-                </IconButton>
+                  <div className="p-4 md:p-5 rounded-full bg-dBg text-dSecondary hover:text-dBg hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">
+                    <Icon />
+                  </div>
+                </Link>
               );
             })}
           </div>
@@ -60,3 +63,10 @@ const Introduction = () => {
 };
 
 export default Introduction;
+
+{
+  /* <div
+className={`
+   dark:hover:bg-dark-secondary shadow-lg shadow-shadow dark:shadow-dark-shadow dark:bg-dark-button/50 dark:text-dark-primary`}
+> */
+}
