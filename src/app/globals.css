@@ -17,6 +17,10 @@ html {
   text-dSecondary before:bg-dGradientPrimary hover:text-dGradientPrimary;
 }
 
+.highlightedWords{
+  @apply font-bold text-dEmphasis
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
