@@ -52,7 +52,7 @@ const Navbar = () => {
           >
             {language === "spanish" ? <FlagUsa /> : <FlagCol />}
           </button>
-          <ul className="hidden md:flex gap-8 justify-center items-center">
+          <ul className="hidden lg:flex gap-8 justify-center items-center">
             <li className="UnderlineEffect">
               <Link href="/">Inicio</Link>
             </li>
@@ -78,11 +78,11 @@ const Navbar = () => {
           >
             {theme === "light" ? <Moon /> : <Sun />}
           </button>
-          <button className="md:hidden" onClick={() => setNav(!nav)}>
+          <button className="lg:hidden" onClick={() => setNav(!nav)}>
             <Menu />
           </button>
         </nav>
-        <div className="hidden md:flex h-full justify-end items-center lg:basis-40">
+        <div className="hidden lg:flex h-full justify-end items-center lg:basis-40">
           <Link
             href={`${CONTACTS.cv.href}`}
             target="_blank"
