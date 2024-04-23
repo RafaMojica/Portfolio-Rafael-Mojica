@@ -17,12 +17,6 @@ html {
   text-dSecondary before:bg-dGradientPrimary hover:text-dGradientPrimary;
 }
 
-@layer base {
-  h2 {
-    @apply text-3xl sm:text-4xl;
-  }
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
