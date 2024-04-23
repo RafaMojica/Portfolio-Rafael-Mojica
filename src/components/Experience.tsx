@@ -3,13 +3,13 @@ import Layout from "@/common/Layout";
 import MainTitle from "@/common/MainTitle";
 import Image from "next/image";
 import Card from "@/common/Card";
-import { EXPERIENCE } from "@/data/Experience";
+import { EXPERIENCE } from "@/data/experience";
 
 const Experience = () => {
   return (
     <Layout
       id="experience"
-      className="py-11 md:py-20 flex flex-col gap-11 md:gap-20"
+      className="pt-11 md:pt-20 flex flex-col gap-11 md:gap-20"
     >
       <MainTitle title="Experiencia" />
       <div className="grid md:grid-cols-2 gap-8 xl:gap-12 justify-center items-center">
