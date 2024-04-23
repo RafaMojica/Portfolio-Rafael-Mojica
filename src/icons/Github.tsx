@@ -11,7 +11,7 @@ export const Github: FC<IconProps> = ({ className }) => {
       fill="none"
       viewBox="0 0 30 30"
     >
-      <g clip-path="url(#a)">
+      <g clipPath="url(#a)">
         <path
           stroke="currentColor"
           strokeLinecap="round"
