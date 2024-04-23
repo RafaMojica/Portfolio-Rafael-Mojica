@@ -5,7 +5,7 @@ import Link from "next/link";
 import Layout from "@/common/Layout";
 import useScroll from "@/hook/useScroll";
 import { ArrowDown } from "@/icons/ArrowDown";
-import { SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Introduction = () => {
   const scroll = useScroll(90);

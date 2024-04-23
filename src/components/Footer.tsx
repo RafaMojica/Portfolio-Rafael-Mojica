@@ -1,5 +1,5 @@
 import React from "react";
-import { SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
+import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Footer = () => {
   return (

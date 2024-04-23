@@ -11,7 +11,7 @@ import { Sun } from "@/icons/Sun";
 import { Moon } from "@/icons/Moon";
 import { FlagCol } from "@/icons/FlagCol";
 import { FlagUsa } from "@/icons/FlagUsa";
-import { CONTACTS, SOCIAL_NETWORKS } from "@/data/socialNetworks.data";
+import { CONTACTS, SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Navbar = () => {
   const scroll = useScroll(90);
