@@ -27,11 +27,9 @@ const Footer = () => {
             })}
           </div>
         </div>
-        <div className="text-dSecondary flex gap-3">
-          <p>2024</p>
-          <p>•</p>
-          <p>Diseñado y Desarrollado por Rafael Mojica</p>
-        </div>
+        <p className=" text-dSecondary">
+          Diseñado y Desarrollado por Rafael Mojica
+        </p>
       </Layout>
     </footer>
   );
