@@ -27,7 +27,7 @@ const Projects = () => {
                 )}
               </div>
               <p
-                className="text-dPrimary leading-6 md:leading-8 text-xs sm:text-base"
+                className="text-dPrimary leading-6 md:leading-8 text-sm sm:text-lg"
                 dangerouslySetInnerHTML={{ __html: description }}
               />
               <Image src={image} alt={`logo del proyecto ${name}`} />

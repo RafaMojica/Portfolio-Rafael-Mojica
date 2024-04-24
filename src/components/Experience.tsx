@@ -18,12 +18,12 @@ const Experience = () => {
             <Card key={name}>
               <Image src={logo} alt={`Foto Empresa ${name}`} />
               <div className="flex flex-col gap-1 font-medium text-center">
-                <h3 className="text-dSecondary text-base sm:text-xl">
+                <h3 className="text-dSecondary text-xl sm:text-2xl">
                   {position}
                 </h3>
                 <p className="text-dPrimary/80 text-sm">{duration}</p>
               </div>
-              <ul className="flex flex-col self-start gap-5 list-inside list-disc text-dPrimary text-xs sm:text-base">
+              <ul className="flex flex-col self-start gap-5 list-inside list-disc text-dPrimary text-sm sm:text-lg">
                 {tasks.map((task, index) => {
                   return (
                     <li
