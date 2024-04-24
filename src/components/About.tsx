@@ -1,20 +1,45 @@
 import React from "react";
 import Layout from "@/common/Layout";
+import MainTitle from "@/common/MainTitle";
+import Card from "@/common/Card";
+import Image from "next/image";
+import PhotoProfile from "../../public/Photo.webp";
 
 const About = () => {
   return (
-    <Layout id="about" className="pt-14 pb-12 md:pb-16">
-      <h2 className="text-center text-secondary dark:text-dark-secondary font-bold">
-        Sobre Mí
-      </h2>
-      <p className="text-lg pt-10 text-description dark:text-dark-description">
-        Como apasionado desarrollador, estoy constantemente en busca de desafíos
-        que me permitan expandir mis habilidades y adquirir conocimientos sobre
-        nuevas tecnologías. Mi compromiso, capacidad para trabajar en equipo y
-        habilidad para resolver problemas generan un impacto positivo en el
-        desarrollo de aplicaciones web, contribuyendo al éxito de diferentes
-        proyectos.
-      </p>
+    <Layout
+      id="aboutMe"
+      className="pt-11 md:pt-20 flex flex-col gap-11 md:gap-20"
+    >
+      <MainTitle title="Sobre Mí" />
+      <div className="flex flex-wrap gap-12 items-center justify-center">
+        <Card className="basis-96 grow">
+          <p className="leading-8 md:leading-8 text-base md:text-lg text-dPrimary">
+            Como apasionado{" "}
+            <span className="font-bold text-dEmphasis">desarrollador</span>,
+            estoy constantemente en busca de{" "}
+            <span className="font-bold text-dEmphasis">desafíos</span> que me
+            permitan expandir mis{" "}
+            <span className="font-bold text-dEmphasis">habilidades</span> y
+            adquirir conocimientos sobre nuevas tecnologías. Mi compromiso,
+            capacidad para{" "}
+            <span className="font-bold text-dEmphasis">trabajar en equipo</span>{" "}
+            y habilidad para{" "}
+            <span className="font-bold text-dEmphasis">resolver problemas</span>{" "}
+            generan un impacto positivo en el desarrollo de{" "}
+            <span className="font-bold text-dEmphasis">aplicaciones web</span>,
+            contribuyendo al éxito de diferentes proyectos.
+          </p>
+        </Card>
+        <div className="relative">
+          <Image
+            src={PhotoProfile}
+            className="w-72 md:w-80"
+            alt="Foto perfil Rafale Mojica"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent to-10%"></div>
+        </div>
+      </div>
     </Layout>
   );
 };
