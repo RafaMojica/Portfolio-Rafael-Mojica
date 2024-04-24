@@ -24,9 +24,8 @@ import { Sequialize } from "@/icons/Sequialize";
 import { Tailwind } from "@/icons/Tailwind";
 import { TypeScript } from "@/icons/TypeScript";
 import { VSCode } from "@/icons/VSCode";
-import { Technologies } from "@/types/technology.types";
 
-export const TECHNOLOGIES: Technologies = {
+export const TECHNOLOGIES = {
   Next: {
     name: "Next",
     Icon: Next,
@@ -38,6 +37,12 @@ export const TECHNOLOGIES: Technologies = {
     Icon: React,
     color: "#61DAFB",
     href: "https://es.react.dev/",
+  },
+  ReactNative: {
+    name: "React Native",
+    Icon: React,
+    color: "#61DAFB",
+    href: "https://reactnative.dev/",
   },
   Redux: {
     name: "Redux",
