@@ -1,18 +1,17 @@
-import { Project } from "@/types/project.types";
 import { TECHNOLOGIES } from "./technologies";
-import TestImage from "../../public/BetaImage.png";
+import LogoFastDelivery from "../../public/FastDelivery.webp";
+import LogoGlobalNewsGroup from "../../public/GlobalNewsGroup.webp";
+import LogoWatchMe from "../../public/WatchMe.svg";
+import LogoComoEnCasa from "../../public/ComoEnCasa.webp";
 
-export const PROJECTS: Project[] = [
-  {
+const PROJECT = {
+  FastDelivery: {
     name: "Fast Delivery",
     web: "",
-    demo: "",
-    image: [TestImage],
-    description:
-      "Aplicación web para una empresa de logística que cuenta con una interfaz intuitiva y eficiente. Esta aplicación, con dos roles diferenciados, garantiza un seguimiento preciso y una gestión óptima de la entrega de paquetes en tiempo real.",
+    image: LogoFastDelivery,
+    description: `<span class="highlightedWords">Aplicación web</span> para una empresa de <span class="highlightedWords">logística</span> que cuenta con una interfaz <span class="highlightedWords">intuitiva</span> y <span class="highlightedWords">eficiente</span>. Esta aplicación, con dos roles diferenciados, garantiza un <span class="highlightedWords">seguimiento preciso</span> y una gestión <span class="highlightedWords">óptima</span> de la entrega de paquetes.`,
     technologies: [
       TECHNOLOGIES.Next,
-      TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
       TECHNOLOGIES.TypeScript,
       TECHNOLOGIES.Node,
@@ -30,15 +29,13 @@ export const PROJECTS: Project[] = [
     },
     repositoryBack: { api: "https://github.com/RafaMojica/staffys-api" },
   },
-  {
+  GlobalNewsGroup: {
     name: "GlobalNews Group",
     web: "",
-    demo: "",
-    image: [TestImage],
-    description:
-      "Aplicación móvil diseñada específicamente para optimizar los procesos en el departamento de recursos humanos, con un enfoque claro en mejorar la eficiencia y la comodidad. Al automatizar tareas clave dentro del departamento.",
+    image: LogoGlobalNewsGroup,
+    description: `<span class="highlightedWords">Aplicación móvil</span> diseñada específicamente para <span class="highlightedWords">optimizar</span> los <span class="highlightedWords">procesos</span> en el departamento de <span class="highlightedWords">recursos humanos</span>, con un enfoque claro en mejorar la <span class="highlightedWords">eficiencia</span> y la comodidad. Al <span class="highlightedWords">automatizar</span> tareas clave dentro del departamento.`,
     technologies: [
-      TECHNOLOGIES.React,
+      TECHNOLOGIES.ReactNative,
       TECHNOLOGIES.Redux,
       TECHNOLOGIES.JavaScript,
       TECHNOLOGIES.Node,
@@ -50,13 +47,11 @@ export const PROJECTS: Project[] = [
     repositoryFront: { client: "https://github.com/RafaMojica/FRONT-App-RRHH" },
     repositoryBack: { api: "https://github.com/RafaMojica/BACK-App-RRHH" },
   },
-  {
+  WatchMe: {
     name: "Watch Me",
     web: "",
-    demo: "",
-    image: [TestImage],
-    description:
-      "Sitio web de películas donde los usuarios pueden explorar, buscar y disfrutar de un amplio catálogo de películas y series. Además, cuentan con la capacidad de registrarse lo que les proporciona una experiencia personalizada.",
+    image: LogoWatchMe,
+    description: `<span class="highlightedWords">Sitio web</span> de películas donde los <span class="highlightedWords">usuarios</span> pueden explorar, buscar y disfrutar de un amplio catálogo de <span class="highlightedWords">películas</span> y <span class="highlightedWords">series</span>. Además, cuentan con la capacidad de registrarse lo que les <span class="highlightedWords">proporciona</span> una <span class="highlightedWords">experiencia personalizada</span>.`,
     technologies: [
       TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
@@ -72,13 +67,11 @@ export const PROJECTS: Project[] = [
     },
     repositoryBack: { api: "https://github.com/RafaMojica/BACK-Web-WatchMe" },
   },
-  {
+  ComoEnCasa: {
     name: "Como en Casa",
     web: "",
-    demo: "",
-    image: [TestImage],
-    description:
-      "Sitio web e-commerce funcional con temática de restaurante, con dos roles, donde el administrador tiene el control total sobre los productos y pedidos y los clientes pueden explorar el menú para realizar su pedido en línea.",
+    image: LogoComoEnCasa,
+    description: `Sitio web <span class="highlightedWords">e-commerce</span> funcional con temática de <span class="highlightedWords">restaurante</span>, con dos roles, donde el <span class="highlightedWords">administrador</span> tiene el control total sobre los <span class="highlightedWords">productos</span> y pedidos y los clientes pueden explorar el menú para realizar su <span class="highlightedWords">pedido en línea</span>.`,
     technologies: [
       TECHNOLOGIES.React,
       TECHNOLOGIES.Redux,
@@ -94,4 +87,11 @@ export const PROJECTS: Project[] = [
       api: "https://github.com/RafaMojica/Como-en-casa/tree/main/api",
     },
   },
+};
+
+export const PROJECTS = [
+  PROJECT.FastDelivery,
+  PROJECT.GlobalNewsGroup,
+  PROJECT.WatchMe,
+  PROJECT.ComoEnCasa,
 ];

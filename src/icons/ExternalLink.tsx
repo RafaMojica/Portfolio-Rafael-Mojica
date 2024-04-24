@@ -1,24 +1,16 @@
 import { IconProps } from "@/types/icon.types";
 import { FC } from "react";
 
-export const ExternalLink: FC<IconProps> = ({
-  width,
-  height,
-  fill,
-  strokeWidth,
-  stroke,
-  className,
-}) => {
+export const ExternalLink: FC<IconProps> = ({ className }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       className={`${className || ""}`}
-      width={`${width || "22"}`}
-      height={`${height || "22"}`}
+      width="25"
+      height="25"
       viewBox="0 0 24 24"
-      strokeWidth={`${strokeWidth || "1.75"}`}
-      stroke={`${stroke || "currentColor"}`}
-      fill={`${fill || "none"}`}
+      strokeWidth="1.75"
+      stroke="CurrentColor"
       strokeLinecap="round"
       strokeLinejoin="round"
     >
