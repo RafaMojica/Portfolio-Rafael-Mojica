@@ -14,7 +14,7 @@ const About = () => {
       <MainTitle title="Sobre Mí" />
       <div className="flex flex-wrap gap-12 items-center justify-center">
         <Card className="basis-96 grow">
-          <p className="leading-8 md:leading-8 text-sm md:text-lg text-dPrimary">
+          <p className="leading-6 md:leading-8 text-sm md:text-lg text-dPrimary">
             Como apasionado{" "}
             <span className="font-bold text-dEmphasis">desarrollador</span>,
             estoy constantemente en busca de{" "}
