@@ -1,32 +1,38 @@
 import React from "react";
+import Layout from "@/common/Layout";
 import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Footer = () => {
   return (
-    <footer
-      id="contact"
-      className="max-w-[950px] mx-auto px-3 pb-7 text-description dark:text-dark-description"
-    >
-      <div className="flex gap-2 items-center justify-center">
-        <p className="text-sm sm:text-base flex items-center justify-center">
-          2024 • Rafael Mojica •
-        </p>
-        <div className="flex gap-2">
-          {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
-            return (
-              <a
-                key={name}
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-secondary dark:hover:text-dark-secondary"
-              >
-                <Icon />
-              </a>
-            );
-          })}
+    <footer className="bg-gradient-to-t from-dPrimary/10 to-dBg/50 mt-11 md:mt-20 p-6">
+      <Layout
+        id="footer"
+        className="flex flex-col gap-6 justify-center items-center"
+      >
+        <div className="flex flex-col justify-center items-center gap-4 text-dSecondary">
+          <p>Contacto</p>
+          <div className="flex gap-4">
+            {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
+              return (
+                <a
+                  key={name}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-dGradientPrimary"
+                >
+                  <Icon />
+                </a>
+              );
+            })}
+          </div>
         </div>
-      </div>
+        <div className="text-dSecondary flex gap-3">
+          <p>2024</p>
+          <p>•</p>
+          <p>Diseñado y Desarrollado por Rafael Mojica</p>
+        </div>
+      </Layout>
     </footer>
   );
 };
