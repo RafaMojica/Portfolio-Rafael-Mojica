@@ -1,7 +1,6 @@
-import { Technology } from "@/types/technology.types";
 import { TECHNOLOGIES } from "./technologies";
 
-export const STACK: Technology[] = [
+export const STACK = [
   TECHNOLOGIES.Next,
   TECHNOLOGIES.React,
   TECHNOLOGIES.Redux,
