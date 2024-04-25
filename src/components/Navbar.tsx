@@ -94,7 +94,7 @@ const Navbar = () => {
             href={`${CONTACTS.cv.href}`}
             target="_blank"
             rel="noreferrer"
-            className="px-7 py-3 rounded-full font-medium text-dSecondary hover:text-dBg duration-300 ease-in-out
+            className="px-6 py-3 rounded-full font-medium text-dSecondary hover:text-dBg duration-300 ease-in-out
           bg-gradient-to-b from-dGradientPrimary/80 to-dGradientSecondary/80
           hover:from-dGradientPrimary hover:to-dGradientSecondary"
           >

@@ -44,7 +44,10 @@ const PROJECT = {
       TECHNOLOGIES.Sequialize,
       TECHNOLOGIES.MaterialUI,
     ],
-    repositoryFront: { client: "https://github.com/RafaMojica/FRONT-App-RRHH" },
+    repositoryFront: {
+      backOffice: "",
+      client: "https://github.com/RafaMojica/FRONT-App-RRHH",
+    },
     repositoryBack: { api: "https://github.com/RafaMojica/BACK-App-RRHH" },
   },
   WatchMe: {
@@ -63,6 +66,7 @@ const PROJECT = {
       TECHNOLOGIES.Sass,
     ],
     repositoryFront: {
+      backOffice: "",
       client: "https://github.com/RafaMojica/FRONT-Web-WatchMe",
     },
     repositoryBack: { api: "https://github.com/RafaMojica/BACK-Web-WatchMe" },
@@ -82,7 +86,10 @@ const PROJECT = {
       TECHNOLOGIES.Sequialize,
       TECHNOLOGIES.Sass,
     ],
-    repositoryFront: { client: "https://github.com/RafaMojica/Como-en-casa" },
+    repositoryFront: {
+      backOffice: "",
+      client: "https://github.com/RafaMojica/Como-en-casa",
+    },
     repositoryBack: {
       api: "https://github.com/RafaMojica/Como-en-casa/tree/main/api",
     },
