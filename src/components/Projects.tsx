@@ -32,7 +32,7 @@ const Projects = () => {
                 )}
               </div>
               <p
-                className="text-dPrimary leading-6 md:leading-8 text-sm sm:text-lg"
+                className="text-dPrimary leading-6 md:leading-8 text-sm sm:text-base"
                 dangerouslySetInnerHTML={{ __html: description }}
               />
               <Image src={image} alt={`logo del proyecto ${name}`} />
@@ -41,7 +41,7 @@ const Projects = () => {
                   return (
                     <span
                       key={name}
-                      className={`text-xs md:text-sm px-4 md:px-5 py-1 rounded-full text-dSecondary/80 bg-dPrimary/10 border-dPrimary/40 border`}
+                      className={`text-xs md:text-sm px-4 py-1 rounded-full text-dSecondary/80 bg-dPrimary/10 border-dPrimary/40 border`}
                     >
                       {name}
                     </span>

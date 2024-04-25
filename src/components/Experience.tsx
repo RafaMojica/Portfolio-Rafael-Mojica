@@ -23,7 +23,7 @@ const Experience = () => {
                 </h3>
                 <p className="text-dPrimary/80 text-sm">{duration}</p>
               </div>
-              <ul className="flex flex-col self-start gap-5 list-inside list-disc text-dPrimary text-sm sm:text-lg">
+              <ul className="flex flex-col self-start gap-5 list-inside list-disc text-dPrimary text-sm sm:text-base">
                 {tasks.map((task, index) => {
                   return (
                     <li
