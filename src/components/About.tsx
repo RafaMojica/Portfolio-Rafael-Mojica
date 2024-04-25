@@ -4,6 +4,8 @@ import MainTitle from "@/common/MainTitle";
 import Card from "@/common/Card";
 import Image from "next/image";
 import PhotoProfile from "../../public/Photo.webp";
+import LinkPrimary from "@/common/LinkPrimary";
+import { CONTACTS } from "@/data/socialNetworks";
 
 const About = () => {
   return (
@@ -30,6 +32,7 @@ const About = () => {
             <span className="font-bold text-dEmphasis">aplicaciones web</span>,
             contribuyendo al éxito de diferentes proyectos.
           </p>
+          <LinkPrimary href={CONTACTS.cv.href} name="Descargar CV" />
         </Card>
         <div className="relative">
           <Image
