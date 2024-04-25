@@ -3,9 +3,8 @@
 @tailwind utilities;
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  scrollbar-width: thin;
+  scrollbar-color: #8f54a0 #000000;
 }
 
 html {
@@ -17,8 +16,8 @@ html {
   text-dSecondary before:bg-dGradientPrimary hover:text-dGradientPrimary;
 }
 
-.highlightedWords{
-  @apply font-bold text-dEmphasis
+.highlightedWords {
+  @apply font-bold text-dEmphasis;
 }
 
 @media (prefers-reduced-motion: reduce) {
