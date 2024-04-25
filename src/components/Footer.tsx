@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Layout from "@/common/Layout";
 import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
@@ -14,15 +15,16 @@ const Footer = () => {
           <div className="flex gap-4">
             {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
               return (
-                <a
+                <Link
                   key={name}
                   href={href}
                   target="_blank"
                   rel="noreferrer"
                   className="hover:text-dGradientPrimary"
+                  aria-label={`enlace a la red social ${name}`}
                 >
                   <Icon />
-                </a>
+                </Link>
               );
             })}
           </div>

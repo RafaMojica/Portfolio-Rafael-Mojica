@@ -44,6 +44,7 @@ const Navbar = () => {
         </div>
         <nav className="flex items-center justify-center gap-4 md:gap-8">
           <button
+            role="button"
             onClick={() => {
               setLanguage((prevTheme) =>
                 prevTheme === "spanish" ? "english" : "spanish"
@@ -54,7 +55,7 @@ const Navbar = () => {
           </button>
           <ul className="hidden lg:flex gap-8 justify-center items-center">
             <li className="UnderlineEffect">
-              <Link href="/">Inicio</Link>
+              <Link href="">Inicio</Link>
             </li>
             <li className="UnderlineEffect">
               <Link href="/#experience">Experiencia</Link>
@@ -70,6 +71,7 @@ const Navbar = () => {
             </li>
           </ul>
           <button
+            role="button"
             onClick={() => {
               setTheme((prevTheme) =>
                 prevTheme === "light" ? "dark" : "light"
@@ -78,7 +80,11 @@ const Navbar = () => {
           >
             {theme === "light" ? <Moon /> : <Sun />}
           </button>
-          <button className="lg:hidden" onClick={() => setNav(!nav)}>
+          <button
+            role="button"
+            className="lg:hidden"
+            onClick={() => setNav(!nav)}
+          >
             <Menu />
           </button>
         </nav>
@@ -112,10 +118,10 @@ const Navbar = () => {
           }
         >
           <div className="flex w-full items-center justify-between">
-            <Link href="/">
+            <Link href="/" aria-label="Logo portafolio web">
               <RM className="text-white" />
             </Link>
-            <button onClick={() => setNav(!nav)}>
+            <button role="button" onClick={() => setNav(!nav)}>
               <CloseX />
             </button>
           </div>
@@ -127,7 +133,7 @@ const Navbar = () => {
           <nav className="flex flex-col mt-9 gap-6">
             <ul className="flex flex-col text-sm gap-5">
               <li className="text-dSecondary">
-                <Link onClick={() => setNav(false)} href="/">
+                <Link onClick={() => setNav(false)} href="">
                   Inicio
                 </Link>
               </li>
@@ -160,6 +166,7 @@ const Navbar = () => {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
+                    aria-label={`enlace a la red social ${name}`}
                     className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
                   >
                     <div className="bg-dBg p-4 text-white hover:text-black rounded-full hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Layout from "@/common/Layout";
 import MainTitle from "@/common/MainTitle";
 import { STACK } from "@/data/skills";
@@ -13,21 +12,16 @@ const Skills = () => {
       <MainTitle title="Habilidades" />
       <div className="max-w-5xl m-auto">
         <div className="flex flex-wrap justify-center items-center gap-5">
-          {STACK.map(({ name, href, Icon }) => {
+          {STACK.map(({ name, Icon }) => {
             return (
-              <Link
-                key={name}
-                href={href}
-                target={href.startsWith("http") ? "_blank" : undefined}
-                rel={href.startsWith("http") ? "noreferrer" : undefined}
-              >
+              <span key={name}>
                 <div
                   className={`text-primary rounded-full p-4 md:p-5 cursor-pointer  hover:scale-110 hover:bg-secondary ease-in duration-300
                  dark:hover:bg-dark-secondary shadow-lg shadow-shadow dark:shadow-dark-shadow dark:bg-dark-button/50 dark:text-dark-primary`}
                 >
                   <Icon />
                 </div>
-              </Link>
+              </span>
             );
           })}
         </div>

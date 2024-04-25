@@ -42,6 +42,7 @@ const Introduction = () => {
                   href={href}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label={`enlace a la red social ${name}`}
                   className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
                 >
                   <div className="p-4 md:p-5 rounded-full bg-dBg text-dSecondary hover:text-dBg hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">

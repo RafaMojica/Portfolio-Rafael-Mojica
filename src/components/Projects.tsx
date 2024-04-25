@@ -21,7 +21,12 @@ const Projects = () => {
               <div className="flex justify-center items-center gap-2 text-dSecondary text-2xl md:text-3xl font-medium">
                 <h3>{name}</h3>
                 {web && (
-                  <Link href={web} target="_blank" rel="noreferrer">
+                  <Link
+                    href={web}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`enlace al proyecto ${name}`}
+                  >
                     <ExternalLink className="hover:stroke-dGradientPrimary" />
                   </Link>
                 )}
