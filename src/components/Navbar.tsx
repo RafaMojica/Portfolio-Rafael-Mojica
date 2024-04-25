@@ -12,6 +12,7 @@ import { Moon } from "@/icons/Moon";
 import { FlagCol } from "@/icons/FlagCol";
 import { FlagUsa } from "@/icons/FlagUsa";
 import { CONTACTS, SOCIAL_NETWORKS } from "@/data/socialNetworks";
+import LinkButton from "@/common/LinkButton";
 
 const Navbar = () => {
   const scroll = useScroll(90);
@@ -161,18 +162,9 @@ const Navbar = () => {
             <div className="flex flex-wrap items-center gap-3 justify-center my-4 mx-auto w-[85%]">
               {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
                 return (
-                  <Link
-                    key={name}
-                    href={href}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`enlace a la red social ${name}`}
-                    className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
-                  >
-                    <div className="bg-dBg p-4 text-white hover:text-black rounded-full hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                  </Link>
+                  <LinkButton key={name} href={href} name={name}>
+                    <Icon className="w-5 h-5" />
+                  </LinkButton>
                 );
               })}
             </div>

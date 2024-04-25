@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import Link from "next/link";
 import Layout from "@/common/Layout";
 import useScroll from "@/hook/useScroll";
+import LinkButton from "@/common/LinkButton";
 import { ArrowDown } from "@/icons/ArrowDown";
 import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
@@ -37,18 +37,9 @@ const Introduction = () => {
           <div className="flex items-center justify-between gap-2 md:gap-3 max-w-[400px] m-auto">
             {SOCIAL_NETWORKS.map(({ name, href, Icon }) => {
               return (
-                <Link
-                  key={name}
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={`enlace a la red social ${name}`}
-                  className="p-[2px] rounded-full bg-gradient-to-b from-dGradientPrimary to-dGradientSecondary hover:scale-110 duration-500 ease-in-out"
-                >
-                  <div className="p-4 md:p-5 rounded-full bg-dBg text-dSecondary hover:text-dBg hover:bg-gradient-to-b hover:from-dGradientPrimary hover:to-dGradientSecondary">
-                    <Icon />
-                  </div>
-                </Link>
+                <LinkButton key={name} href={href} name={name}>
+                  <Icon />
+                </LinkButton>
               );
             })}
           </div>
