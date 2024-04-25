@@ -4,7 +4,7 @@ import { SOCIAL_NETWORKS } from "@/data/socialNetworks";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-t from-dPrimary/10 to-dBg/50 mt-11 md:mt-20 p-6">
+    <footer className=" bg-dPrimary/10 mt-11 md:mt-20 p-6">
       <Layout
         id="footer"
         className="flex flex-col gap-6 justify-center items-center"
