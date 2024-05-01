@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Portafolio | Rafael Mojica",
   description:
     "Portafolio personal web donde conocerás más sobre mi trayectoria en el mundo del desarrollo web, aquí podrás ver mi experiencia laboral, proyectos realizados, tecnologías que manejo y mucho más.",
-  metadataBase: new URL("https://issn-even-kitty-advertisement.trycloudflare.com/"),
+  metadataBase: new URL("https://portafolio-rafael-mojica.vercel.app/"),
 };
 
 const roboto = Roboto({
