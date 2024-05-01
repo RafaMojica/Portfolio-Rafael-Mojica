@@ -38,7 +38,7 @@
 
 ## Descripción del proyecto
 
-Mi portafolio personal web donde conocerás un poco más sobre mi trayectoria en el mundo del desarrollo web, aquí podrás ver mi experiencia laboral, proyectos realizados, tecnologías que manejo y mucho más.
+Mi portafolio personal web donde conocerás más sobre mi trayectoria en el mundo del desarrollo web, aquí podrás ver mi experiencia laboral, proyectos realizados, tecnologías que manejo y mucho más.
 
 ### Tecnologías utilizadas
 
